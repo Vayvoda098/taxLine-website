@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tax-consultancy-website/static/css/main.a654bd66.css",
+    "main.js": "/tax-consultancy-website/static/js/main.48502873.js",
+    "static/js/453.7ae57ccd.chunk.js": "/tax-consultancy-website/static/js/453.7ae57ccd.chunk.js",
+    "index.html": "/tax-consultancy-website/index.html",
+    "main.a654bd66.css.map": "/tax-consultancy-website/static/css/main.a654bd66.css.map",
+    "main.48502873.js.map": "/tax-consultancy-website/static/js/main.48502873.js.map",
+    "453.7ae57ccd.chunk.js.map": "/tax-consultancy-website/static/js/453.7ae57ccd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a654bd66.css",
+    "static/js/main.48502873.js"
+  ]
+}
