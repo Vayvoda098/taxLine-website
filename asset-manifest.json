@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/tax-consultancy-website/static/css/main.a654bd66.css",
-    "main.js": "/tax-consultancy-website/static/js/main.48502873.js",
-    "static/js/453.7ae57ccd.chunk.js": "/tax-consultancy-website/static/js/453.7ae57ccd.chunk.js",
-    "index.html": "/tax-consultancy-website/index.html",
-    "main.a654bd66.css.map": "/tax-consultancy-website/static/css/main.a654bd66.css.map",
-    "main.48502873.js.map": "/tax-consultancy-website/static/js/main.48502873.js.map",
-    "453.7ae57ccd.chunk.js.map": "/tax-consultancy-website/static/js/453.7ae57ccd.chunk.js.map"
+    "main.css": "/taxLine-website/static/css/main.a654bd66.css",
+    "main.js": "/taxLine-website/static/js/main.a5c43d7f.js",
+    "static/js/453.7ae57ccd.chunk.js": "/taxLine-website/static/js/453.7ae57ccd.chunk.js",
+    "index.html": "/taxLine-website/index.html",
+    "main.a654bd66.css.map": "/taxLine-website/static/css/main.a654bd66.css.map",
+    "main.a5c43d7f.js.map": "/taxLine-website/static/js/main.a5c43d7f.js.map",
+    "453.7ae57ccd.chunk.js.map": "/taxLine-website/static/js/453.7ae57ccd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a654bd66.css",
-    "static/js/main.48502873.js"
+    "static/js/main.a5c43d7f.js"
   ]
 }
