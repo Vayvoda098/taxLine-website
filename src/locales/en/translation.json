@@ -1,0 +1,162 @@
+{
+  "brand": "TAXEUROPE",
+  "owner": {
+    "fullName": "Muhammet Soykan",
+    "title": "Certified Public Accountant",
+    "license": "Istanbul CPA Chamber Reg. No: 347890",
+    "bio": "Delivering proactive advisory with measurable impact for every size of business."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Solutions",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "25+ years of advisory excellence",
+    "title": "Bring clarity to your finances with TAXEUROPE",
+    "subtitle": "We align your tax, accounting, reporting and investment decisions under one roof, combining compliance with data-driven insight.",
+    "cta": "Book a Meeting",
+    "secondaryCta": "Call Now",
+    "secondaryNote": "24/7 strategic hotline",
+    "stats": [
+      { "value": "120+", "label": "Active clients" },
+      { "value": "98%", "label": "Long-term partners" },
+      { "value": "4.9/5", "label": "Satisfaction score" }
+    ],
+    "caseStudy": {
+      "badge": "Istanbul tech scale-up",
+      "title": "Improved cash flow by 18% within 3 months",
+      "metrics": [
+        { "label": "Tax optimization", "value": "+₺4.2M" },
+        { "label": "Budget deviation", "value": "%-9 → %-2" },
+        { "label": "Reporting cycle", "value": "72h → 6h" }
+      ],
+      "timeline": [
+        { "label": "Week 1", "desc": "Compliance heatmap & risk matrix delivered." },
+        { "label": "Week 3", "desc": "Live dashboards via ERP integration." },
+        { "label": "Week 12", "desc": "Audit-ready investor pack completed." }
+      ]
+    }
+  },
+  "about": {
+    "title": "Who we are",
+    "text": "TAXEUROPE is an independent advisory studio helping businesses streamline complex financial operations from entity setup to international reporting.",
+    "highlights": [
+      "Accurate bookkeeping and statutory records",
+      "Tax planning and management of all returns",
+      "Company incorporation, transfer and closing advisory",
+      "Digital reporting and regular management updates"
+    ],
+    "credentials": [
+      "Independent audit licence (KGK)",
+      "Active member of ISMMMO & TURMOB",
+      "ERP integrations for SAP, Logo, Netsis"
+    ],
+    "metrics": [
+      { "value": "25", "label": "years experience" },
+      { "value": "9", "label": "industries served" },
+      { "value": "3", "label": "reporting languages" }
+    ]
+  },
+  "services": {
+    "title": "Our services",
+    "subtitle": "End-to-end financial guidance for every stage",
+    "description": "Regardless of your company size, we build compliant and scalable financial structures.",
+    "items": [
+      {
+        "title": "General Accounting & Returns",
+        "desc": "Bookkeeping, statutory ledgers and preparation of VAT, withholding and corporate tax returns."
+      },
+      {
+        "title": "Tax & Regulatory Advisory",
+        "desc": "Up-to-date compliance, tax planning scenarios and proactive risk detection."
+      },
+      {
+        "title": "Payroll & HR Processes",
+        "desc": "Payroll, SGK filings and HR workflows aligned with labour law."
+      },
+      {
+        "title": "Reporting & Financial Analysis",
+        "desc": "Management reports, KPI dashboards and decision-ready insights."
+      }
+    ],
+    "roadmap": {
+      "title": "How we work",
+      "subtitle": "From the first discovery call to automated reporting, we follow a transparent, measurable methodology.",
+      "steps": [
+        {
+          "title": "1. Discovery",
+          "desc": "We analyse your organisation, goals and current finance stack."
+        },
+        {
+          "title": "2. Roadmap",
+          "desc": "We design an actionable plan for tax, compliance and reporting."
+        },
+        {
+          "title": "3. Continuous optimisation",
+          "desc": "We monitor real-time dashboards and iterate wherever needed."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Reach out for questions, quotes or appointments and we will reply within the day.",
+    "addressLabel": "Address",
+    "address": "Terkos İş Hanı, Taksim / Istanbul",
+    "phoneLabel": "Phone",
+    "emailLabel": "E-mail",
+    "hoursTitle": "Office hours",
+    "hoursValue": "Weekdays 9 am – 7 pm • Saturday by appointment",
+    "channels": [
+      {
+        "label": "Phone",
+        "value": "+90 532 123 45 67",
+        "href": "tel:+905321234567",
+        "hint": "Direct advisory line"
+      },
+      {
+        "label": "E-mail",
+        "value": "info@taxeurope.com.tr",
+        "href": "mailto:info@taxeurope.com.tr",
+        "hint": "Replies within 1 business day"
+      },
+      {
+        "label": "WhatsApp",
+        "value": "+90 532 123 45 67",
+        "href": "https://wa.me/905321234567",
+        "hint": "Instant messaging support"
+      }
+    ],
+    "form": {
+      "name": "Full Name",
+      "email": "E-mail",
+      "phone": "Phone",
+      "message": "Your Message",
+      "submit": "Send message",
+      "title": "Book a discovery call",
+      "badge": "TAXEUROPE session",
+      "footerPrimary": "Average response time {{time}}.",
+      "footerPrimaryTime": "same business day",
+      "footerSecondary": "Your details will only be used to contact you back in line with data privacy rules."
+    }
+  },
+  "cta": {
+    "badge": "STRATEGIC SUPPORT",
+    "title": "Clarify your financial roadmap in a 30-minute discovery",
+    "subtitle": "We surface compliance risks, tax opportunities and reporting needs in a single tailored workshop.",
+    "points": [
+      "Custom KPI and reporting kit for your company",
+      "Quick checklist for tax optimisation",
+      "Cash-flow actions for sustainable growth"
+    ],
+    "highlightLabel": "Net savings",
+    "highlightValue": "18%",
+    "highlightDesc": "Average improvement per client",
+    "ctaButton": "Book Advisory"
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

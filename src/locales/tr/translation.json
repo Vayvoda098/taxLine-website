@@ -1,0 +1,162 @@
+{
+  "brand": "TAXEUROPE",
+  "owner": {
+    "fullName": "Muhammet Soykan",
+    "title": "Serbest Muhasebeci Mali Müşavir",
+    "license": "İSMMMO Sicil No: 347890",
+    "bio": "Şeffaflık ve güven esaslı çalışarak her ölçekteki işletmeye proaktif mali yol haritaları hazırlıyorum."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Çözümler",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "tagline": "25+ yıllık mali müşavirlik deneyimi",
+    "title": "TAXEUROPE ile mali süreçlerinizde netlik ve güven",
+    "subtitle": "Vergi, muhasebe, raporlama ve yatırım kararlarınızı aynı masada topluyor; regülasyona uyumlu ve öngörülebilir finansal akışlar kuruyoruz.",
+    "cta": "Randevu Planla",
+    "secondaryCta": "Hemen Ara",
+    "secondaryNote": "7/24 stratejik danışman hattı",
+    "stats": [
+      { "value": "120+", "label": "Aktif müşteri" },
+      { "value": "%98", "label": "Uzun dönem iş ortağı" },
+      { "value": "4.9/5", "label": "Memnuniyet ortalaması" }
+    ],
+    "caseStudy": {
+      "badge": "İstanbul teknoloji girişimi",
+      "title": "3 ayda nakit akışını %18 iyileştirdik",
+      "metrics": [
+        { "label": "Vergi optimizasyonu", "value": "+₺4,2M" },
+        { "label": "Bütçe sapması", "value": "%-9 → %-2" },
+        { "label": "Raporlama süresi", "value": "72s → 6s" }
+      ],
+      "timeline": [
+        { "label": "1. Hafta", "desc": "Risk ve mevzuat uyum haritası çıkarıldı." },
+        { "label": "3. Hafta", "desc": "ERP entegrasyonu ile gerçek zamanlı raporlama açıldı." },
+        { "label": "12. Hafta", "desc": "Yatırım turu için denetim paketi hazırlandı." }
+      ]
+    }
+  },
+  "about": {
+    "title": "Biz Kimiz?",
+    "text": "TAXEUROPE, karmaşık mali süreçleri yalınlaştırmak isteyen şirketlere uçtan uca danışmanlık veren bağımsız bir mali müşavirlik ofisidir. Şirket kurulumundan uluslararası raporlamaya kadar tüm adımları tek çatı altında yönetiyoruz.",
+    "highlights": [
+      "Gelir – gider ve defter kayıtlarının eksiksiz takibi",
+      "Vergi planlaması ve beyan süreçlerinin yönetimi",
+      "Şirket kuruluş, devir ve kapanış danışmanlığı",
+      "Dijital ortamda raporlama ve düzenli bilgilendirme"
+    ],
+    "credentials": [
+      "KGK Bağımsız Denetçi Sertifikası",
+      "İSMMMO & TÜRMOB aktif üyelik",
+      "SAP, Logo ve Netsis entegrasyon deneyimi"
+    ],
+    "metrics": [
+      { "value": "25", "label": "yıl tecrübe" },
+      { "value": "9", "label": "farklı sektör" },
+      { "value": "3", "label": "dilde raporlama" }
+    ]
+  },
+  "services": {
+    "title": "Hizmetlerimiz",
+    "subtitle": "Her ölçekte işletmeye uçtan uca mali müşavirlik",
+    "description": "Şirketiniz hangi büyüklükte olursa olsun, mevzuata tam uyumlu ve sürdürülebilir finansal yapılar kuruyoruz.",
+    "items": [
+      {
+        "title": "Genel Muhasebe ve Beyanname",
+        "desc": "Tüm resmi defterlerin tutulması, KDV, Muhtasar, Geçici ve Gelir/Kurumlar Vergisi beyannamelerinin hazırlanması."
+      },
+      {
+        "title": "Vergi ve Mevzuat Danışmanlığı",
+        "desc": "Sürekli değişen vergi mevzuatına uygunluk, vergi planlaması ve olası risklerin önceden tespiti."
+      },
+      {
+        "title": "Bordro ve Personel İşlemleri",
+        "desc": "SGK ve iş kanunu çerçevesinde bordro, bildirge ve tüm personel süreçlerinin yürütülmesi."
+      },
+      {
+        "title": "Raporlama ve Finansal Analiz",
+        "desc": "Yönetim raporları, nakit akış ve kârlılık analizleri ile işletmenizin finansal fotoğrafını netleştiriyoruz."
+      }
+    ],
+    "roadmap": {
+      "title": "Nasıl çalışıyoruz?",
+      "subtitle": "İlk toplantıdan raporlama otomasyonuna kadar şeffaf, ölçülebilir bir metodoloji izliyoruz.",
+      "steps": [
+        {
+          "title": "1. Tanışma ve keşif",
+          "desc": "Şirketinizi, hedeflerinizi ve mevcut mali mimarinizi analiz ediyoruz."
+        },
+        {
+          "title": "2. Yol haritası",
+          "desc": "Vergi, mevzuat ve raporlama için adım adım uygulanabilir aksiyon planı çıkarıyoruz."
+        },
+        {
+          "title": "3. Sürekli optimizasyon",
+          "desc": "Gerçek zamanlı raporlarla süreci izliyor, gerektiğinde yeni düzenlemeler öneriyoruz."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "subtitle": "Soru, teklif veya randevu talepleriniz için bize ulaşın. Size aynı gün içinde geri dönelim.",
+    "addressLabel": "Adres",
+    "address": "Terkos İş Hanı, Taksim / İstanbul",
+    "phoneLabel": "Telefon",
+    "emailLabel": "E-posta",
+    "hoursTitle": "Çalışma Saatleri",
+    "hoursValue": "Hafta içi 09:00 – 19:00 • Cumartesi randevu ile",
+    "channels": [
+      {
+        "label": "Telefon",
+        "value": "+90 538 281 57 01",
+        "href": "tel:+905382815701",
+        "hint": "Doğrudan danışma hattı"
+      },
+      {
+        "label": "E-posta",
+        "value": "info@taxeurope.com.tr",
+        "href": "mailto:info@taxeurope.com.tr",
+        "hint": "En geç 1 iş gününde dönüş"
+      },
+      {
+        "label": "WhatsApp",
+        "value": "+90 538 281 57 01",
+        "href": "https://wa.me/905382815701",
+        "hint": "Hızlı mesaj desteği"
+      }
+    ],
+    "form": {
+      "name": "Ad Soyad",
+      "email": "E-posta",
+      "phone": "Telefon",
+      "message": "Mesajınız",
+      "submit": "Mesajı Gönder",
+      "title": "Ön görüşme planlayalım",
+      "badge": "TAXEUROPE görüşmesi",
+      "footerPrimary": "Ortalama dönüş süresi {{time}}.",
+      "footerPrimaryTime": "aynı iş günü",
+      "footerSecondary": "Form bilgileriniz KVKK kapsamında yalnızca iletişim için kullanılacaktır."
+    }
+  },
+  "cta": {
+    "badge": "STRATEJİK DESTEK",
+    "title": "Finansal yol haritanızı 30 dakikalık ön görüşmede netleştirelim",
+    "subtitle": "Sektörünüze göre mevzuat risklerini, vergi fırsatlarını ve raporlama ihtiyaçlarını aynı toplantıda çıkarıyoruz.",
+    "points": [
+      "Şirketinize özel KPI ve raporlama seti önerisi",
+      "Vergi optimizasyonu için hızlı kontrol listesi",
+      "Sürdürülebilir büyüme için nakit akış planı"
+    ],
+    "highlightLabel": "Net tasarruf",
+    "highlightValue": "%18",
+    "highlightDesc": "Ortalama müşteri iyileştirmesi",
+    "ctaButton": "Danışmanlık Al"
+  },
+  "footer": {
+    "rights": "Tüm hakları saklıdır."
+  }
+}
