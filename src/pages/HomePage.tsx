@@ -7,7 +7,7 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <ConsultationBanner />
     </>
   );
