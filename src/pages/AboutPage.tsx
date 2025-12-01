@@ -6,7 +6,6 @@ const AboutPage: React.FC = () => {
   return (
     <>
       <About />
-      <ProcessRoadmap />
     </>
   );
 };
