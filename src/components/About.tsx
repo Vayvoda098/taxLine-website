@@ -81,7 +81,7 @@ const About: React.FC = () => {
         >
           <div className="relative overflow-hidden rounded-[32px] border border-slate-100 shadow-2xl">
             <img
-              src="/img/muhammetSoykan.jpg"
+              src={process.env.PUBLIC_URL + '/img/muhammetSoykan.jpg'}
               alt={t('owner.fullName')}
               className="aspect-[4/5] w-full object-cover"
             />
