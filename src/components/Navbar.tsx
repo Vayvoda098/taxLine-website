@@ -52,11 +52,13 @@ const Navbar: React.FC = () => {
           <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-r from-sky-500 to-cyan-300 text-base font-semibold text-slate-950 shadow-lg shadow-sky-500/40">
             T
           </div>
-          <div className="flex flex-col leading-tight">
-            <span className="text-[11px] font-semibold uppercase tracking-[0.4em] text-slate-300">
-              {t('owner.title')}
+          <div className="flex flex-col leading-tight text-left">
+            <span className="text-sm font-semibold tracking-wide text-white">
+              {t('brand')}
             </span>
-            <span className="text-base font-semibold text-white">{t('brand')}</span>
+            <span className="text-[11px] font-medium text-slate-300">
+              {t('owner.fullName')} • {t('owner.title')}
+            </span>
           </div>
         </Link>
 

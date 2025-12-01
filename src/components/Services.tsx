@@ -19,6 +19,8 @@ const Services: React.FC = () => {
   const { t }: any = useTranslation();
   const rawItems = t('services.items', { returnObjects: true });
   const items = Array.isArray(rawItems) ? (rawItems as ServiceItem[]) : [];
+  const rawDetailed = t('services.detailed.items', { returnObjects: true });
+  const detailedItems = Array.isArray(rawDetailed) ? (rawDetailed as ServiceItem[]) : [];
 
   return (
     <section
@@ -68,6 +70,21 @@ const Services: React.FC = () => {
             );
           })}
         </div>
+        {detailedItems.length > 0 && (
+          <div className="mt-16 rounded-3xl border border-white/10 bg-slate-950/60 p-8 text-left shadow-inner shadow-black/30">
+            <h3 className="text-center text-2xl font-semibold uppercase tracking-[0.4em] text-white">
+              {t('services.detailed.title')}
+            </h3>
+            <div className="mt-8 space-y-8 text-sm leading-relaxed text-slate-100">
+              {detailedItems.map((service) => (
+                <div key={service.title} className="space-y-2">
+                  <h4 className="text-base font-semibold text-white">{service.title}</h4>
+                  <p className="text-sm text-slate-200">{service.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

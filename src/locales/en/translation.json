@@ -81,6 +81,43 @@
         "desc": "Management reports, KPI dashboards and decision-ready insights."
       }
     ],
+    "detailed": {
+      "title": "Our services",
+      "items": [
+        {
+          "title": "Company incorporation",
+          "desc": "We manage the full setup for sole proprietorships, limited and joint-stock companies – from document preparation to trade registry and tax office procedures, including SGK registration."
+        },
+        {
+          "title": "Accounting & advisory",
+          "desc": "We provide end-to-end support for tax returns, statutory books, financial statements and advisory, ensuring transparent and fully compliant accounting processes."
+        },
+        {
+          "title": "Social security incentives & payroll",
+          "desc": "We optimise your SGK incentives and handle payroll, filings and labour cost analysis in line with current regulations."
+        },
+        {
+          "title": "VAT refund management",
+          "desc": "For export, investment and other eligible transactions, we prepare your VAT refund files and follow up the process with the tax office from start to finish."
+        },
+        {
+          "title": "R&D and technopark advisory",
+          "desc": "From R&D centre setup to technopark applications, we guide you through incentives, exemptions and reporting requirements to maximise available support."
+        },
+        {
+          "title": "Work permits for foreigners",
+          "desc": "We manage all Ministry of Labour and Social Security procedures for your foreign employees, preparing applications, contracts and system records completely."
+        },
+        {
+          "title": "Trade registry procedures",
+          "desc": "We complete title changes, capital increases, address changes and all other trade registry transactions quickly on your behalf."
+        },
+        {
+          "title": "Financial reporting",
+          "desc": "We regularly analyse your financial performance and support you with management reports so you can take timely, data-driven strategic decisions."
+        }
+      ]
+    },
     "roadmap": {
       "title": "How we work",
       "subtitle": "From the first discovery call to automated reporting, we follow a transparent, measurable methodology.",
