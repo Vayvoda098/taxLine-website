@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/taxLine-website/static/css/main.087f0cd5.css",
-    "main.js": "/taxLine-website/static/js/main.03300ec8.js",
+    "main.css": "/taxLine-website/static/css/main.dce95d20.css",
+    "main.js": "/taxLine-website/static/js/main.f1353a9e.js",
     "static/js/453.7ae57ccd.chunk.js": "/taxLine-website/static/js/453.7ae57ccd.chunk.js",
     "index.html": "/taxLine-website/index.html",
-    "main.087f0cd5.css.map": "/taxLine-website/static/css/main.087f0cd5.css.map",
-    "main.03300ec8.js.map": "/taxLine-website/static/js/main.03300ec8.js.map",
+    "main.dce95d20.css.map": "/taxLine-website/static/css/main.dce95d20.css.map",
+    "main.f1353a9e.js.map": "/taxLine-website/static/js/main.f1353a9e.js.map",
     "453.7ae57ccd.chunk.js.map": "/taxLine-website/static/js/453.7ae57ccd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.087f0cd5.css",
-    "static/js/main.03300ec8.js"
+    "static/css/main.dce95d20.css",
+    "static/js/main.f1353a9e.js"
   ]
 }
