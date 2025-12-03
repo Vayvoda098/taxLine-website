@@ -135,6 +135,12 @@
           "desc": "Gerçek zamanlı raporlarla süreci izliyor, gerektiğinde yeni düzenlemeler öneriyoruz."
         }
       ]
+    },
+    "detailCards": {
+      "scopeTitle": "Bu hizmet neleri kapsar?",
+      "scopeText": "Sunulan hizmet; mevzuata tam uyum, belge ve bildirim süreçleri ile düzenli raporlama adımlarını kapsayan uçtan uca bir danışmanlık yapısı sunar.",
+      "whyTitle": "Neden TAXEUROPE?",
+      "whyText": "Her adımda şeffaf iletişim, zamanında bilgilendirme ve ölçülebilir finansal sonuçlar üretmeyi hedefliyoruz. Şirketinizin büyüklüğü ne olursa olsun, süreci aynı özenle yönetiyoruz."
     }
   },
   "contact": {

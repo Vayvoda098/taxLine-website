@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
+import ServiceDetailPage from './pages/ServiceDetailPage';
 import WhatsAppButton from './components/WhatsAppButton';
 
 const App: React.FC = () => {
@@ -32,6 +33,7 @@ const App: React.FC = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/hakkimizda" element={<AboutPage />} />
               <Route path="/cozumler" element={<ServicesPage />} />
+              <Route path="/cozumler/:serviceSlug" element={<ServiceDetailPage />} />
               <Route path="/iletisim" element={<ContactPage />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>

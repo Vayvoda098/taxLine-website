@@ -135,6 +135,12 @@
           "desc": "We monitor real-time dashboards and iterate wherever needed."
         }
       ]
+    },
+    "detailCards": {
+      "scopeTitle": "What does this service cover?",
+      "scopeText": "This service brings together end-to-end advisory across compliance, documentation, filings and regular reporting.",
+      "whyTitle": "Why TAXEUROPE?",
+      "whyText": "We focus on transparent communication, timely updates and measurable financial outcomes, no matter the size of your organisation."
     }
   },
   "contact": {

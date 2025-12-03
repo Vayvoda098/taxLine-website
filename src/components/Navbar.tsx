@@ -10,6 +10,19 @@ const links = [
   { to: '/iletisim', labelKey: 'nav.contact' },
 ];
 
+// Hizmetler dropdown'ı için kullanılan sabit slug listesi,
+// i18n'deki services.detailed.items dizisinin sırasıyla birebir eşleştirilir.
+const serviceSlugs: string[] = [
+  'sirket-kurulus-islemleri',
+  'mali-musavirlik-hizmetleri',
+  'sgk-tesvik-ve-bordrolama',
+  'kdv-iadesi',
+  'arge-ve-teknopark-danismanligi',
+  'yabanci-calisma-izni',
+  'ticaret-sicil-islemleri',
+  'finansal-raporlama-hizmeti',
+];
+
 const Navbar: React.FC = () => {
   const { t, i18n }: any = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -108,13 +121,13 @@ const Navbar: React.FC = () => {
                         </div>
                         
                         {/* Menü öğeleri */}
-                        <div className="flex flex-col gap-1">
+                        <div className="flex flex-col gap-1 ">
                           {t('services.detailed.items', { returnObjects: true })
                             .slice(0, 8)
                             .map((item: any, index: number) => (
                               <Link
                                 key={item.title}
-                                to="/cozumler#services"
+                                to={`/cozumler/${serviceSlugs[index]}`}
                                 onClick={() => {
                                   setServicesOpen(false);
                                 }}
@@ -207,10 +220,10 @@ const Navbar: React.FC = () => {
                       <div className="ml-3 flex flex-col gap-1 text-xs font-normal text-slate-100">
                         {t('services.detailed.items', { returnObjects: true })
                           .slice(0, 8)
-                          .map((item: any) => (
+                          .map((item: any, index: number) => (
                             <Link
                               key={item.title}
-                              to="/cozumler#services"
+                              to={`/cozumler/${serviceSlugs[index]}`}
                               onClick={() => {
                                 setMenuOpen(false);
                               }}
