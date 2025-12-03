@@ -15,32 +15,28 @@ const iconMap: Record<string, React.ReactNode> = {
   Phone: <PhoneIcon className="h-5 w-5" />,
   'E-posta': <EnvelopeIcon className="h-5 w-5" />,
   'E-mail': <EnvelopeIcon className="h-5 w-5" />,
-  WhatsApp: <PhoneIcon className="h-5 w-5" />,
+  LinkedIn: (
+    <svg className="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="2" className="fill-sky-600" />
+      <path
+        d="M8.1 17.5H6V9.4h2.1v8.1ZM7 8.4A1.22 1.22 0 0 1 5.8 7.2 1.22 1.22 0 0 1 7 6a1.22 1.22 0 0 1 1.2 1.2A1.22 1.22 0 0 1 7 8.4Zm11 9.1h-2.1v-4.3c0-1.02-.37-1.7-1.29-1.7-.7 0-1.11.47-1.29.93-.07.17-.09.41-.09.65v4.42H11V9.4h2.02v1.16c.29-.45.82-1.1 2.01-1.1 1.47 0 2.97.96 2.97 3.38v4.66Z"
+        className="fill-white"
+      />
+    </svg>
+  ),
+  Instagram: (
+    <svg className="h-5 w-5" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" className="fill-pink-500" />
+      <circle cx="12" cy="12" r="4" className="fill-white" />
+      <circle cx="17" cy="7" r="1.1" className="fill-white" />
+    </svg>
+  ),
 };
 
 const Contact: React.FC = () => {
   const { t }: any = useTranslation();
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
-  const channels: Channel[] = [
-    {
-      label: 'Telefon',
-      value: '+90 538 281 57 01',
-      href: 'tel:+905382815701',
-      hint: 'Doğrudan danışma hattı',
-    },
-    {
-      label: 'E-posta',
-      value: 'info@taxeurope.com.tr',
-      href: 'mailto:info@taxeurope.com.tr',
-      hint: 'En geç 1 iş gününde dönüş',
-    },
-    {
-      label: 'WhatsApp',
-      value: '+90 538 281 57 01',
-      href: 'https://wa.me/905382815701',
-      hint: 'Hızlı mesaj desteği',
-    },
-  ];
+  const channels: Channel[] = t('contact.channels', { returnObjects: true });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -56,60 +52,87 @@ const Contact: React.FC = () => {
   return (
     <section
       id="contact"
-      className="relative border-t border-white/10 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 py-16"
+      className="relative border-t border-white/10 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 pt-14 pb-4"
     >
       <div className="mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-[1.05fr_0.95fr]">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="space-y-6 rounded-[32px] border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-8 shadow-2xl shadow-slate-200/70"
+          className="space-y-6 rounded-[32px] border border-white/10 bg-slate-950/60 p-8 shadow-2xl shadow-slate-950/70 backdrop-blur-xl"
         >
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-600">{t('contact.title')}</p>
-            <h2 className="mt-3 text-3xl font-semibold text-slate-900">{t('owner.fullName')}</h2>
-            <p className="mt-3 text-base text-slate-600">{t('contact.subtitle')}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.4em] text-sky-400">{t('contact.title')}</p>
+            <h2 className="mt-3 text-3xl font-semibold text-white">{t('owner.fullName')}</h2>
+            <p className="mt-3 text-base text-slate-200">{t('contact.subtitle')}</p>
           </div>
           <div className="space-y-4">
-            <div className="flex gap-4 rounded-2xl border border-slate-100 bg-white p-5 shadow-sm">
+            <a
+              href="https://www.google.com/maps/place/41%C2%B001'51.7%22N+28%C2%B058'31.5%22E/@41.0310287,28.9728527,17z/data=!3m1!4b1!4m4!3m3!8m2!3d41.0310287!4d28.9754276?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex gap-4 rounded-2xl border border-white/10 bg-white/5 p-5 shadow-sm shadow-slate-950/40 transition hover:border-sky-300/60 hover:shadow-sky-500/40 hover:shadow-lg cursor-pointer"
+            >
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-900 text-white">
                 <MapPinIcon className="h-5 w-5" />
               </div>
               <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
-                  {t('contact.addressLabel')}
-                </p>
-                <p className="text-base font-semibold text-slate-900">{t('contact.address')}</p>
-                <p className="text-xs text-slate-500">{t('contact.hoursTitle')}</p>
-                <p className="text-sm text-slate-600">{t('contact.hoursValue')}</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-300">{t('contact.addressLabel')}</p>
+                <p className="text-base font-semibold text-white">{t('contact.address')}</p>
+                <p className="text-xs text-slate-300">{t('contact.hoursTitle')}</p>
+                <p className="text-sm text-slate-200">{t('contact.hoursValue')}</p>
               </div>
-            </div>
+            </a>
             <div className="grid gap-4 sm:grid-cols-2">
-              {channels.map((channel) => (
-                <div
-                  key={channel.label}
-                  className="rounded-2xl border border-slate-200 bg-slate-50/95 p-5 shadow-sm shadow-slate-200"
-                >
-                  <div className="flex items-center gap-2 text-sm font-semibold text-slate-900">
-                    <span className="flex h-8 w-8 items-center justify-center rounded-full bg-sky-50 text-sky-500">
-                      {iconMap[channel.label] || <PhoneIcon className="h-5 w-5" />}
-                    </span>
-                    {channel.label}
-                  </div>
+              {channels.map((channel) => {
+                const isSocial = channel.label === 'LinkedIn' || channel.label === 'Instagram';
+                const isInstagram = channel.label === 'Instagram';
+
+                if (isSocial) {
+                  return (
+                    <a
+                      key={channel.label}
+                      href={channel.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`rounded-2xl border p-5 shadow-sm transition-all sm:col-span-2 ${
+                        isInstagram ? 'sm:col-span-2' : ''
+                      } cursor-pointer border-white/10 bg-gradient-to-r from-slate-900 to-slate-950 text-white hover:border-sky-300/60 hover:shadow-sky-500/40 hover:shadow-lg`}
+                    >
+                      <div className="flex items-center gap-2 text-sm font-semibold">
+                        <span className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-sky-300">
+                          {iconMap[channel.label] || <PhoneIcon className="h-5 w-5" />}
+                        </span>
+                        <span className="text-slate-50">{channel.label}</span>
+                      </div>
+                      <p className="mt-2 text-lg font-semibold text-slate-50">{channel.value}</p>
+                      {channel.hint && <p className="text-xs text-slate-400">{channel.hint}</p>}
+                    </a>
+                  );
+                }
+
+                return (
                   <a
+                    key={channel.label}
                     href={channel.href}
-                    className="mt-2 block text-lg font-semibold text-slate-900 transition hover:text-sky-600"
+                    className="rounded-2xl border border-white/10 bg-white/5 p-5 text-slate-50 shadow-sm transition hover:border-sky-300/60 hover:shadow-sky-500/30 hover:shadow-lg cursor-pointer"
                   >
-                    {channel.value}
+                    <div className="flex items-center gap-2 text-sm font-semibold">
+                      <span className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-sky-300">
+                        {iconMap[channel.label] || <PhoneIcon className="h-5 w-5" />}
+                      </span>
+                      <span>{channel.label}</span>
+                    </div>
+                    <p className="mt-2 text-lg font-semibold text-slate-50">{channel.value}</p>
+                    {channel.hint && <p className="text-xs text-slate-300">{channel.hint}</p>}
                   </a>
-                  {channel.hint && <p className="text-xs text-slate-500">{channel.hint}</p>}
-                </div>
-              ))}
+                );
+              })}
             </div>
-            <div className="rounded-2xl border border-slate-100">
+            <div className="rounded-2xl border border-white/10">
               <iframe
                 title="Ofis Konumu"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.777969824838!2d28.97247007724853!3d41.03120201777721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e06b3bf8d9%3A0xad4897de17c33f66!2sTerkos%20%C4%B0%C5%9F%20Han%C4%B1!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3009.7777!2d28.9728527!3d41.0310287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDEmwqAwMSc1MS43Ik4gMjjCsDU4JzMxLjUiRQ!5e0!3m2!1str!2str!4v1700000000001!5m2!1str!2str"
                 width="100%"
                 height="260"
                 style={{ border: 0 }}

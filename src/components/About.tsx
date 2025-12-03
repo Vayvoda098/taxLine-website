@@ -16,7 +16,7 @@ const About: React.FC = () => {
   return (
     <section
       id="about"
-      className="relative border-t border-white/10 bg-gradient-to-br from-[#08152f] via-[#0a1f46] to-[#040b1c] py-16 text-white"
+      className="relative border-t border-white/10 bg-gradient-to-br from-[#08152f] via-[#0a1f46] to-[#040b1c] pt-14 pb-0 text-white"
     >
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" aria-hidden />
       <div className="mx-auto flex max-w-6xl flex-col gap-12 px-4 lg:flex-row lg:gap-16">
@@ -42,7 +42,7 @@ const About: React.FC = () => {
               </li>
             ))}
           </ul>
-          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4">
             <div className="flex flex-col rounded-3xl border border-white/10 bg-white/5 p-6 shadow-2xl shadow-black/40 backdrop-blur">
               <p className="text-sm font-semibold text-white">Uzmanlık ve Yetkinlikler</p>
               <ul className="mt-3 flex-1 space-y-2 text-sm text-slate-200">
@@ -54,25 +54,10 @@ const About: React.FC = () => {
                 ))}
               </ul>
             </div>
-            <div className="flex h-full flex-col space-y-4 rounded-2xl border border-white/10 bg-slate-900/30 p-4 text-center shadow-inner shadow-black/40">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-300">Ölçülebilir başarı</p>
-              <div className="flex-1 grid grid-cols-3 gap-2">
-                {metrics.map((metric) => (
-                  <div
-                    key={metric.label}
-                    className="rounded-xl bg-slate-900/45 px-2 py-3 text-white shadow shadow-black/30 backdrop-blur"
-                  >
-                    <div className="text-lg font-semibold text-white md:text-xl">{metric.value}</div>
-                    <p className="mt-1 text-[9px] leading-tight font-semibold uppercase text-slate-300 md:text-[10px]">
-                      {metric.label}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </motion.div>
 
+        {/* resim kismi */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -98,9 +83,16 @@ const About: React.FC = () => {
               </div>
             </div>
           </div>
+          <br></br>
+          <br></br>
+          <br></br>
         </motion.div>
+       
       </div>
+    <br></br>  
+    <br></br>  
     </section>
+    
   );
 };
 

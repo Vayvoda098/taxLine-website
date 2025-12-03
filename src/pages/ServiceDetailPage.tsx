@@ -23,6 +23,8 @@ const ServiceDetailPage: React.FC = () => {
   const serviceIndex = serviceSlug ? serviceSlugs.indexOf(serviceSlug) : -1;
   const rawDetailed = t('services.detailed.items', { returnObjects: true });
   const detailedItems = Array.isArray(rawDetailed) ? rawDetailed : [];
+  const roadmap = t('services.roadmap', { returnObjects: true }) as any;
+  const roadmapSteps = Array.isArray(roadmap?.steps) ? roadmap.steps : [];
 
   // Geçersiz bir slug gelirse, kullanıcıyı genel hizmetler sayfasına yönlendirecek linkler gösterilir
   if (serviceIndex < 0 || serviceIndex >= detailedItems.length) {
@@ -91,15 +93,30 @@ const ServiceDetailPage: React.FC = () => {
           </p>
         </div>
 
-        {/* İki kartlı özet alanı */}
+        {/* Roadmap + Neden kartları */}
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-6">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-400">
-              {t('services.detailCards.scopeTitle')}
+              {roadmap?.title || t('services.roadmap.title')}
             </p>
             <p className="mt-3 text-sm leading-relaxed text-slate-200">
-              {t('services.detailCards.scopeText')}
+              {roadmap?.subtitle || t('services.roadmap.subtitle')}
             </p>
+            <div className="mt-5 space-y-3">
+              {roadmapSteps.map((step: any, idx: number) => (
+                <div key={step.title || idx} className="flex items-start gap-3">
+                  <div className="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-sky-500/20 text-xs font-semibold text-sky-300">
+                    {idx + 1}
+                  </div>
+                  <div>
+                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-300">
+                      {step.title}
+                    </p>
+                    <p className="text-xs text-slate-300">{step.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div className="rounded-3xl border border-sky-500/25 bg-slate-950/80 p-6">

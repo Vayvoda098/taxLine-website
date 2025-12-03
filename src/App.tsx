@@ -8,13 +8,15 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import ServiceDetailPage from './pages/ServiceDetailPage';
+import NewsPage from './pages/NewsPage';
+import NewsDetailPage from './pages/NewsDetailPage';
 import WhatsAppButton from './components/WhatsAppButton';
 
 const App: React.FC = () => {
   const location = useLocation();
 
   return (
-    <div className="relative min-h-screen bg-slate-950 text-slate-900">
+    <div className="relative bg-slate-950 text-slate-900">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.15),_transparent_55%)]"
@@ -31,6 +33,8 @@ const App: React.FC = () => {
           >
             <Routes location={location}>
               <Route path="/" element={<HomePage />} />
+              <Route path="/haberler" element={<NewsPage />} />
+              <Route path="/haberler/:slug" element={<NewsDetailPage />} />
               <Route path="/hakkimizda" element={<AboutPage />} />
               <Route path="/cozumler" element={<ServicesPage />} />
               <Route path="/cozumler/:serviceSlug" element={<ServiceDetailPage />} />

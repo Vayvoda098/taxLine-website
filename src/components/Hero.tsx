@@ -123,17 +123,8 @@ const Hero: React.FC = () => {
                 </div>
               ))}
             </div>
-            <div className="mt-6">
-              <div className="flex gap-2">
-                {Array.from({ length: 8 }).map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={`h-16 flex-1 rounded-full bg-gradient-to-t from-slate-800 to-slate-600`}
-                    style={{ opacity: 0.4 + idx * 0.07 }}
-                  />
-                ))}
-              </div>
-              <p className="mt-3 text-xs text-slate-400">{t('owner.license')}</p>
+            <div className="mt-4">
+              <p className="text-xs text-slate-400">{t('owner.license')}</p>
             </div>
           </div>
 

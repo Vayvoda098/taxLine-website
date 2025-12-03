@@ -10,6 +10,7 @@
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
     "services": "Hizmetlerimiz",
+    "news": "Haberler",
     "contact": "İletişim"
   },
   "hero": {
@@ -66,19 +67,19 @@
     "items": [
       {
         "title": "Genel Muhasebe ve Beyanname",
-        "desc": "Tüm resmi defterlerin tutulması, KDV, Muhtasar, Geçici ve Gelir/Kurumlar Vergisi beyannamelerinin hazırlanması."
+        "desc": "Tüm resmi defterlerin mevzuata uygun biçimde tutulması, KDV, Muhtasar, Geçici ve Gelir/Kurumlar Vergisi beyannamelerinin zamanında hazırlanıp gönderilmesi; tahakkuk ve ödeme süreçlerinin uçtan uca takibi."
       },
       {
         "title": "Vergi ve Mevzuat Danışmanlığı",
-        "desc": "Sürekli değişen vergi mevzuatına uygunluk, vergi planlaması ve olası risklerin önceden tespiti."
+        "desc": "Sürekli değişen vergi ve ticaret mevzuatına uyumun sağlanması, alternatif vergi planlama senaryolarının oluşturulması ve işletmenizi etkileyebilecek risklerin önceden tespit edilerek aksiyon planına dönüştürülmesi."
       },
       {
         "title": "Bordro ve Personel İşlemleri",
-        "desc": "SGK ve iş kanunu çerçevesinde bordro, bildirge ve tüm personel süreçlerinin yürütülmesi."
+        "desc": "SGK ve iş kanunu çerçevesinde bordro hazırlama, aylık bildirgeler, işe giriş/çıkış ve yıllık izin süreçleri gibi tüm personel işlemlerinin eksiksiz yönetilmesi; teşvik ve maliyet optimizasyonu için düzenli raporlama yapılması."
       },
       {
         "title": "Raporlama ve Finansal Analiz",
-        "desc": "Yönetim raporları, nakit akış ve kârlılık analizleri ile işletmenizin finansal fotoğrafını netleştiriyoruz."
+        "desc": "Yönetim kurulu ve yatırımcı sunumlarına uygun, detaylı finansal tablolar, nakit akış ve kârlılık analizleri hazırlıyor; işletmenizin kısa ve uzun vadeli kararları için net ve karşılaştırılabilir finansal fotoğraf sunuyoruz."
       }
     ],
     "detailed": {
@@ -166,10 +167,16 @@
         "hint": "En geç 1 iş gününde dönüş"
       },
       {
-        "label": "WhatsApp",
-        "value": "+90 538 281 57 01",
-        "href": "https://wa.me/905382815701",
-        "hint": "Hızlı mesaj desteği"
+        "label": "LinkedIn",
+        "value": "LinkedIn",
+        "href": "https://www.linkedin.com/in/muhammet-soykan-1a1918202/",
+        "hint": "Profesyonel profil"
+      },
+      {
+        "label": "Instagram",
+        "value": "Instagram",
+        "href": "https://www.instagram.com/taxeurope?igsh=MWJyOHI2ajBjcHNkdA%3D%3D",
+        "hint": "Güncel paylaşımlar"
       }
     ],
     "form": {
@@ -198,6 +205,18 @@
     "highlightValue": "%18",
     "highlightDesc": "Ortalama müşteri iyileştirmesi",
     "ctaButton": "Danışmanlık Al"
+  },
+  "news": {
+    "badge": "MUHASEBE HABERLERİ",
+    "title": "Güncel muhasebe ve vergi dünyasından kısa notlar",
+    "subtitle": "Mevzuat değişiklikleri, dijital muhasebe trendleri ve işletmeler için öne çıkan başlıkları özetliyoruz.",
+    "readMore": "DETAYLI İNCELE",
+    "externalSource": "İlgili kaynağı görüntüle",
+    "footerNote": "Bu alandaki içerikler genel bilgilendirme amaçlıdır; güncel mevzuat ve resmi duyurular mutlaka ayrıca kontrol edilmelidir.",
+    "footerLink": "",
+    "notFound": "İstediğiniz haber bulunamadı.",
+    "backToList": "Tüm haberlere dön",
+    "sources": "Kullanılan kaynaklar"
   },
   "footer": {
     "rights": "Tüm hakları saklıdır."

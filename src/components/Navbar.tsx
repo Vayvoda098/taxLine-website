@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon, PhoneArrowUpRightIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { Link, NavLink } from 'react-router-dom';
+
 import { useTranslation } from 'react-i18next';
 
 const links = [
   { to: '/', labelKey: 'nav.home', end: true },
   { to: '/hakkimizda', labelKey: 'nav.about' },
   { to: '/cozumler', labelKey: 'nav.services', hasDropdown: true },
+  { to: '/haberler', labelKey: 'nav.news' },
   { to: '/iletisim', labelKey: 'nav.contact' },
 ];
 
@@ -60,8 +62,8 @@ const Navbar: React.FC = () => {
   );
 
   return (
-    <header className="sticky top-0 z-30 border-b border-white/10 bg-slate-950/60 text-white backdrop-blur-lg">
-      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+    <header className="sticky top-0 z-30 border-b border-white/10 bg-slate-950/70 text-white backdrop-blur-xl">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         {/* LOGO ALANI */}
         <Link to="/" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
           <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-r from-sky-500 to-cyan-300 text-base font-semibold text-slate-950 shadow-lg shadow-sky-500/40">
@@ -71,14 +73,11 @@ const Navbar: React.FC = () => {
             <span className="text-sm font-semibold tracking-wide text-white">
               {t('brand')}
             </span>
-            <span className="text-[11px] font-medium text-slate-300">
-              {t('owner.fullName')} • {t('owner.title')}
-            </span>
           </div>
         </Link>
 
         {/* MASAÜSTÜ MENÜ */}
-        <nav className="hidden items-center gap-6 text-sm font-medium text-slate-200 md:flex">
+        <nav className="hidden items-center gap-7 text-[13px] font-medium text-slate-200 md:flex">
           {links.map((link) => {
             if (link.hasDropdown) {
               return (
@@ -113,13 +112,6 @@ const Navbar: React.FC = () => {
                     <div className="absolute left-1/2 -translate-x-1/2 top-full w-80 pt-2 animate-in fade-in slide-in-from-top-2 duration-200">
                       {/* Opak arkaplan katmanı */}
                       <div className="rounded-2xl border-2 border-sky-500/30 bg-slate-900 p-3 shadow-2xl shadow-sky-500/20 backdrop-blur-xl">
-                        {/* Başlık */}
-                        <div className="mb-3 border-b border-sky-500/20 pb-2">
-                          <h3 className="text-xs font-semibold uppercase tracking-wider text-sky-400">
-                            {t(link.labelKey)}
-                          </h3>
-                        </div>
-                        
                         {/* Menü öğeleri */}
                         <div className="flex flex-col gap-1 ">
                           {t('services.detailed.items', { returnObjects: true })

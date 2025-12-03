@@ -10,6 +10,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "news": "News",
     "contact": "Contact"
   },
   "hero": {
@@ -66,19 +67,19 @@
     "items": [
       {
         "title": "General Accounting & Returns",
-        "desc": "Bookkeeping, statutory ledgers and preparation of VAT, withholding and corporate tax returns."
+        "desc": "Comprehensive bookkeeping and statutory ledger management, together with the preparation and filing of VAT, withholding and corporate income tax returns, including follow-up of assessments and payment schedules."
       },
       {
         "title": "Tax & Regulatory Advisory",
-        "desc": "Up-to-date compliance, tax planning scenarios and proactive risk detection."
+        "desc": "Keeping you aligned with constantly changing tax and regulatory rules, designing practical tax planning scenarios and proactively detecting potential risks before they turn into penalties or disputes."
       },
       {
         "title": "Payroll & HR Processes",
-        "desc": "Payroll, SGK filings and HR workflows aligned with labour law."
+        "desc": "End-to-end payroll processing, SGK and tax filings, onboarding and termination procedures and leave tracking – all aligned with labour law and supported by clear cost and incentive analysis."
       },
       {
         "title": "Reporting & Financial Analysis",
-        "desc": "Management reports, KPI dashboards and decision-ready insights."
+        "desc": "Designing management reports and KPI dashboards that translate raw numbers into clear insights, including cash-flow and profitability analysis to support strategic decision-making."
       }
     ],
     "detailed": {
@@ -166,10 +167,16 @@
         "hint": "Replies within 1 business day"
       },
       {
-        "label": "WhatsApp",
-        "value": "+90 532 123 45 67",
-        "href": "https://wa.me/905321234567",
-        "hint": "Instant messaging support"
+        "label": "LinkedIn",
+        "value": "LinkedIn",
+        "href": "https://www.linkedin.com/in/muhammet-soykan-1a1918202/",
+        "hint": "Professional profile"
+      },
+      {
+        "label": "Instagram",
+        "value": "Instagram",
+        "href": "https://www.instagram.com/taxeurope?igsh=MWJyOHI2ajBjcHNkdA%3D%3D",
+        "hint": "Latest updates"
       }
     ],
     "form": {
@@ -198,6 +205,18 @@
     "highlightValue": "18%",
     "highlightDesc": "Average improvement per client",
     "ctaButton": "Book Advisory"
+  },
+  "news": {
+    "badge": "ACCOUNTING NEWS",
+    "title": "Concise updates from the world of tax and accounting",
+    "subtitle": "We summarise regulatory changes, digital accounting trends and practical highlights for business owners.",
+    "readMore": "READ SUMMARY",
+    "externalSource": "View related reference",
+    "footerNote": "Articles in this area provide general information only; you should always verify details against current legislation and official announcements.",
+    "footerLink": "",
+    "notFound": "The news item you requested could not be found.",
+    "backToList": "Back to all news",
+    "sources": "References used"
   },
   "footer": {
     "rights": "All rights reserved."
