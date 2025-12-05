@@ -13,6 +13,7 @@ const serviceSlugs: string[] = [
   'yabanci-calisma-izni',
   'ticaret-sicil-islemleri',
   'finansal-raporlama-hizmeti',
+  'yabanci-sermaye-kurulus-islemleri',
 ];
 
 const ServiceDetailPage: React.FC = () => {
@@ -23,8 +24,6 @@ const ServiceDetailPage: React.FC = () => {
   const serviceIndex = serviceSlug ? serviceSlugs.indexOf(serviceSlug) : -1;
   const rawDetailed = t('services.detailed.items', { returnObjects: true });
   const detailedItems = Array.isArray(rawDetailed) ? rawDetailed : [];
-  const roadmap = t('services.roadmap', { returnObjects: true }) as any;
-  const roadmapSteps = Array.isArray(roadmap?.steps) ? roadmap.steps : [];
 
   // Geçersiz bir slug gelirse, kullanıcıyı genel hizmetler sayfasına yönlendirecek linkler gösterilir
   if (serviceIndex < 0 || serviceIndex >= detailedItems.length) {
@@ -60,6 +59,7 @@ const ServiceDetailPage: React.FC = () => {
   }
 
   const currentService = detailedItems[serviceIndex];
+  const hasDetails = currentService?.details && currentService.details.items;
 
   return (
     <section className="relative bg-slate-950 pb-20 pt-10 text-white">
@@ -86,6 +86,25 @@ const ServiceDetailPage: React.FC = () => {
 
       {/* Ana içerik alanı */}
       <div className="relative z-10 mx-auto mt-10 max-w-6xl px-4 space-y-8">
+        {/* Hizmet görseli - her hizmete özel resim */}
+        {currentService.image && (
+          <div className="max-w-3xl overflow-hidden rounded-3xl border border-white/10 shadow-lg">
+            <img 
+              src={`${process.env.PUBLIC_URL}${currentService.image}`} 
+              alt={currentService.title}
+              className={
+                serviceSlug === 'yabanci-sermaye-kurulus-islemleri'
+                  ? 'h-64 w-full object-cover object-[center_80%] sm:h-80'
+                  : 'h-64 w-full object-cover object-bottom sm:h-80'
+              }
+              onError={(e) => {
+                // Resim yüklenemezse gizle
+                (e.target as HTMLImageElement).style.display = 'none';
+              }}
+            />
+          </div>
+        )}
+
         {/* Başlık altı açıklama bloğu */}
         <div className="max-w-3xl rounded-3xl border border-white/10 bg-slate-900/90 p-7 shadow-inner shadow-black/40">
           <p className="text-[15px] leading-relaxed text-slate-100">
@@ -93,32 +112,35 @@ const ServiceDetailPage: React.FC = () => {
           </p>
         </div>
 
-        {/* Roadmap + Neden kartları */}
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-6">
-            <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-400">
-              {roadmap?.title || t('services.roadmap.title')}
-            </p>
-            <p className="mt-3 text-sm leading-relaxed text-slate-200">
-              {roadmap?.subtitle || t('services.roadmap.subtitle')}
-            </p>
-            <div className="mt-5 space-y-3">
-              {roadmapSteps.map((step: any, idx: number) => (
-                <div key={step.title || idx} className="flex items-start gap-3">
-                  <div className="mt-1 flex h-6 w-6 items-center justify-center rounded-full bg-sky-500/20 text-xs font-semibold text-sky-300">
-                    {idx + 1}
+        {/* Detaylı hizmet içeriği - sadece details objesi varsa ve yabancı sermaye kuruluş işlemleri sayfası değilse gösterilir */}
+        {hasDetails && serviceSlug !== 'yabanci-sermaye-kurulus-islemleri' && (
+          <div className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/90 to-slate-950/90 p-8 shadow-inner shadow-black/30">
+            {currentService.details.intro && (
+              <p className="mb-6 text-sm font-semibold uppercase tracking-[0.3em] text-sky-300">
+                {currentService.details.intro}
+              </p>
+            )}
+            <div className="grid gap-6 md:grid-cols-1 lg:grid-cols-3">
+              {currentService.details.items.map((item: any, idx: number) => (
+                <div
+                  key={idx}
+                  className="group rounded-2xl border border-white/10 bg-slate-950/60 p-6 transition hover:border-sky-500/30 hover:bg-slate-900/60"
+                >
+                  <div className="mb-3 flex items-center gap-3">
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full bg-sky-500/20 text-sm font-bold text-sky-300 transition group-hover:bg-sky-500/30">
+                      {idx + 1}
+                    </div>
+                    <h3 className="text-base font-semibold text-white">{item.title}</h3>
                   </div>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.25em] text-sky-300">
-                      {step.title}
-                    </p>
-                    <p className="text-xs text-slate-300">{step.desc}</p>
-                  </div>
+                  <p className="text-sm leading-relaxed text-slate-200">{item.desc}</p>
                 </div>
               ))}
             </div>
           </div>
+        )}
 
+        {/* Neden kartı */}
+        <div className="grid gap-6 md:grid-cols-1">
           <div className="rounded-3xl border border-sky-500/25 bg-slate-950/80 p-6">
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-sky-400">
               {t('services.detailCards.whyTitle')}

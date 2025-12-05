@@ -66,14 +66,13 @@ const About: React.FC = () => {
         >
           <div className="relative overflow-hidden rounded-[32px] border border-slate-100 shadow-2xl">
             <img
-              src={process.env.PUBLIC_URL + '/img/muhammetSoykan.jpg'}
+              src={`${process.env.PUBLIC_URL}/img/muhammetSoykan.jpg`}
               alt={t('owner.fullName')}
               className="aspect-[4/5] w-full object-cover"
             />
             <div className="absolute inset-x-6 bottom-6 rounded-2xl bg-white/90 p-5 shadow-xl backdrop-blur">
               <p className="text-sm font-semibold text-slate-900">{t('owner.fullName')}</p>
               <p className="text-xs text-slate-500">{t('owner.title')}</p>
-              <p className="mt-3 text-xs text-slate-500">{t('owner.license')}</p>
               <div className="mt-4 flex flex-wrap gap-2 text-[11px] uppercase tracking-[0.3em] text-slate-500">
                 {['Vergi', 'Muhasebe', 'Raporlama'].map((tag) => (
                   <span key={tag} className="rounded-full border border-slate-200 px-3 py-1">

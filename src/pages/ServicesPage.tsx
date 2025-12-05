@@ -1,6 +1,5 @@
 import React from 'react';
 import Services from '../components/Services';
-import ProcessRoadmap from '../components/ProcessRoadmap';
 import ConsultationBanner from '../components/ConsultationBanner';
 
 const ServicesPage: React.FC = () => {
@@ -8,7 +7,6 @@ const ServicesPage: React.FC = () => {
     <>
       <Services />
       <ConsultationBanner />
-      <ProcessRoadmap />
     </>
   );
 };

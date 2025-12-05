@@ -105,9 +105,6 @@ const Hero: React.FC = () => {
 
           <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/75 to-slate-800/55 p-6 shadow-2xl backdrop-blur">
             <div className="space-y-3">
-              <p className="text-xs font-semibold uppercase tracking-[0.4em] text-slate-400">
-                {caseStudy.badge}
-              </p>
               <h3 className="text-xl font-semibold leading-snug text-white sm:text-2xl">{caseStudy.title}</h3>
             </div>
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
@@ -122,9 +119,6 @@ const Hero: React.FC = () => {
                   <p className="mt-2 text-base font-semibold text-white sm:text-lg">{metric.value}</p>
                 </div>
               ))}
-            </div>
-            <div className="mt-4">
-              <p className="text-xs text-slate-400">{t('owner.license')}</p>
             </div>
           </div>
 

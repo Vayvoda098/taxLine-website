@@ -3,7 +3,6 @@
   "owner": {
     "fullName": "Muhammet Soykan",
     "title": "Certified Public Accountant",
-    "license": "Istanbul CPA Chamber Reg. No: 347890",
     "bio": "Delivering proactive advisory with measurable impact for every size of business."
   },
   "nav": {
@@ -26,7 +25,6 @@
       { "value": "4.9/5", "label": "Satisfaction score" }
     ],
     "caseStudy": {
-      "badge": "Istanbul tech scale-up",
       "title": "Improved cash flow by 18% within 3 months",
       "metrics": [
         { "label": "Tax optimization", "value": "+₺4.2M" },
@@ -87,56 +85,68 @@
       "items": [
         {
           "title": "Company incorporation",
-          "desc": "We manage the full setup for sole proprietorships, limited and joint-stock companies – from document preparation to trade registry and tax office procedures, including SGK registration."
+          "desc": "We manage the full setup for sole proprietorships, limited and joint-stock companies – from document preparation to trade registry and tax office procedures, including SGK registration.",
+          "image": "/img/successful-acceptance-signing-hands-businessman-consultant.jpg"
         },
         {
           "title": "Accounting & advisory",
-          "desc": "We provide end-to-end support for tax returns, statutory books, financial statements and advisory, ensuring transparent and fully compliant accounting processes."
+          "desc": "We provide end-to-end support for tax returns, statutory books, financial statements and advisory, ensuring transparent and fully compliant accounting processes.",
+          "image": "/img/glasses-office-desktop-with-papers.jpg"
         },
         {
           "title": "Social security incentives & payroll",
-          "desc": "We optimise your SGK incentives and handle payroll, filings and labour cost analysis in line with current regulations."
+          "desc": "We optimise your SGK incentives and handle payroll, filings and labour cost analysis in line with current regulations.",
+          "image": "/img/front-view-young-beautiful-lady-grey-shirt-working-her-pc-sitting-inside-her-office-daytime-building-job-activity.jpg"
         },
         {
           "title": "VAT refund management",
-          "desc": "For export, investment and other eligible transactions, we prepare your VAT refund files and follow up the process with the tax office from start to finish."
+          "desc": "For export, investment and other eligible transactions, we prepare your VAT refund files and follow up the process with the tax office from start to finish.",
+          "image": "/img/copyspace-business-elements.jpg"
         },
         {
           "title": "R&D and technopark advisory",
-          "desc": "From R&D centre setup to technopark applications, we guide you through incentives, exemptions and reporting requirements to maximise available support."
+          "desc": "From R&D centre setup to technopark applications, we guide you through incentives, exemptions and reporting requirements to maximise available support.",
+          "image": "/img/unwell-leader-taking-painkiller-ease-pain-due-overload-burnout.jpg"
         },
         {
           "title": "Work permits for foreigners",
-          "desc": "We manage all Ministry of Labour and Social Security procedures for your foreign employees, preparing applications, contracts and system records completely."
+          "desc": "We manage all Ministry of Labour and Social Security procedures for your foreign employees, preparing applications, contracts and system records completely.",
+          "image": "/img/young-successful-businessman-sitting-workplace-office-background.jpg"
         },
         {
           "title": "Trade registry procedures",
-          "desc": "We complete title changes, capital increases, address changes and all other trade registry transactions quickly on your behalf."
+          "desc": "We complete title changes, capital increases, address changes and all other trade registry transactions quickly on your behalf.",
+          "image": "/img/2210.i602.018.F.m009.c7.tax people flat composition.jpg"
         },
         {
           "title": "Financial reporting",
-          "desc": "We regularly analyse your financial performance and support you with management reports so you can take timely, data-driven strategic decisions."
-        }
-      ]
-    },
-    "roadmap": {
-      "title": "How we work",
-      "subtitle": "From the first discovery call to automated reporting, we follow a transparent, measurable methodology.",
-      "steps": [
-        {
-          "title": "1. Discovery",
-          "desc": "We analyse your organisation, goals and current finance stack."
+          "desc": "We regularly analyse your financial performance and support you with management reports so you can take timely, data-driven strategic decisions.",
+          "image": "/img/young-tired-businessman-working-his-office-businessperson-professional-environment.jpg"
         },
         {
-          "title": "2. Roadmap",
-          "desc": "We design an actionable plan for tax, compliance and reporting."
-        },
-        {
-          "title": "3. Continuous optimisation",
-          "desc": "We monitor real-time dashboards and iterate wherever needed."
+          "title": "Foreign Capital Establishment Services",
+          "desc": "We manage fully compliant company establishment processes for foreign investors wishing to invest in Turkey, in accordance with foreign capital legislation and Turkish Commercial Code provisions. From trade registry registration to tax office procedures, and from required permit applications to legal compliance processes, we professionally handle all steps.",
+          "image": "/img/5291220.jpg",
+          "details": {
+            "intro": "Under Foreign Capital Establishment Services, we offer our clients the following services:",
+            "items": [
+              {
+                "title": "Company Establishment Procedures",
+                "desc": "We complete company establishment procedures in accordance with Turkish Commercial Code provisions and handle all necessary permit applications for foreign investors wishing to invest in Turkey in compliance with foreign capital legislation."
+              },
+              {
+                "title": "Liaison Office Establishment",
+                "desc": "We handle establishment procedures and complete all necessary permit applications for foreign investors wishing to establish a liaison office in Turkey in accordance with Foreign Capital legislation."
+              },
+              {
+                "title": "Legal Compliance and Advisory",
+                "desc": "We provide comprehensive advisory services on ensuring compliance with necessary legal regulations for foreign investors' operations in Turkey, and monitoring and managing permit and license processes."
+              }
+            ]
+          }
         }
       ]
-    },
+},
     "detailCards": {
       "scopeTitle": "What does this service cover?",
       "scopeText": "This service brings together end-to-end advisory across compliance, documentation, filings and regular reporting.",

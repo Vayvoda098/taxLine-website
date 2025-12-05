@@ -23,6 +23,7 @@ const serviceSlugs: string[] = [
   'yabanci-calisma-izni',
   'ticaret-sicil-islemleri',
   'finansal-raporlama-hizmeti',
+  'yabanci-sermaye-kurulus-islemleri',
 ];
 
 const Navbar: React.FC = () => {
@@ -115,7 +116,7 @@ const Navbar: React.FC = () => {
                         {/* Menü öğeleri */}
                         <div className="flex flex-col gap-1 ">
                           {t('services.detailed.items', { returnObjects: true })
-                            .slice(0, 8)
+                            .slice(0, 9)
                             .map((item: any, index: number) => (
                               <Link
                                 key={item.title}
@@ -211,7 +212,7 @@ const Navbar: React.FC = () => {
                       </NavLink>
                       <div className="ml-3 flex flex-col gap-1 text-xs font-normal text-slate-100">
                         {t('services.detailed.items', { returnObjects: true })
-                          .slice(0, 8)
+                          .slice(0, 9)
                           .map((item: any, index: number) => (
                             <Link
                               key={item.title}

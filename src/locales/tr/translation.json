@@ -3,7 +3,6 @@
   "owner": {
     "fullName": "Muhammet Soykan",
     "title": "Serbest Muhasebeci Mali Müşavir",
-    "license": "İSMMMO Sicil No: 347890",
     "bio": "Şeffaflık ve güven esaslı çalışarak her ölçekteki işletmeye proaktif mali yol haritaları hazırlıyorum."
   },
   "nav": {
@@ -26,7 +25,6 @@
       { "value": "4.9/5", "label": "Memnuniyet ortalaması" }
     ],
     "caseStudy": {
-      "badge": "İstanbul teknoloji girişimi",
       "title": "3 ayda nakit akışını %18 iyileştirdik",
       "metrics": [
         { "label": "Vergi optimizasyonu", "value": "+₺4,2M" },
@@ -87,56 +85,68 @@
       "items": [
         {
           "title": "Şirket Kuruluş İşlemleri",
-          "desc": "Şahıs, Limited ve Anonim şirket türlerinde kuruluş sürecini; belgelerin hazırlanması, ticaret sicili kaydı ve vergi dairesi işlemleriyle eksiksiz yürütüyoruz. Belgelerin hazırlanmasından SGK kaydına kadar tüm süreci sizin adınıza profesyonel olarak tamamlıyoruz."
+          "desc": "Şahıs, Limited ve Anonim şirket türlerinde kuruluş sürecini; belgelerin hazırlanması, ticaret sicili kaydı ve vergi dairesi işlemleriyle eksiksiz yürütüyoruz. Belgelerin hazırlanmasından SGK kaydına kadar tüm süreci sizin adınıza profesyonel olarak tamamlıyoruz.",
+          "image": "/img/successful-acceptance-signing-hands-businessman-consultant.jpg"
         },
         {
           "title": "Mali Müşavirlik Hizmetleri",
-          "desc": "Vergi beyannameleri, defter tasdikleri, mali tabloların hazırlanması ve danışmanlık süreçlerinde tam kapsamlı destek sağlıyoruz. Şirketinizin tüm muhasebe süreçlerini şeffaf, düzenli ve yasal mevzuata uygun şekilde yürütüyoruz."
+          "desc": "Vergi beyannameleri, defter tasdikleri, mali tabloların hazırlanması ve danışmanlık süreçlerinde tam kapsamlı destek sağlıyoruz. Şirketinizin tüm muhasebe süreçlerini şeffaf, düzenli ve yasal mevzuata uygun şekilde yürütüyoruz.",
+          "image": "/img/glasses-office-desktop-with-papers.jpg"
         },
         {
           "title": "SGK Teşvik ve Bordrolama Hizmeti",
-          "desc": "SGK teşviklerinden maksimum fayda sağlayarak bordrolama, bildirge ve işçi maliyet analizlerini sizin için yönetiyoruz. Güncel teşvik ve mevzuatlara uygun şekilde tüm bordro süreçlerini optimize ediyoruz."
+          "desc": "SGK teşviklerinden maksimum fayda sağlayarak bordrolama, bildirge ve işçi maliyet analizlerini sizin için yönetiyoruz. Güncel teşvik ve mevzuatlara uygun şekilde tüm bordro süreçlerini optimize ediyoruz.",
+          "image": "/img/front-view-young-beautiful-lady-grey-shirt-working-her-pc-sitting-inside-her-office-daytime-building-job-activity.jpg"
         },
         {
           "title": "KDV İadesi",
-          "desc": "İhracat, yatırım ve diğer işlemler için KDV iade dosyalarınızı profesyonelce hazırlayıp süreci baştan sona takip ediyoruz. Vergi dairesi nezdinde tüm KDV iade süreçlerinizi hatasız şekilde tamamlıyoruz."
+          "desc": "İhracat, yatırım ve diğer işlemler için KDV iade dosyalarınızı profesyonelce hazırlayıp süreci baştan sona takip ediyoruz. Vergi dairesi nezdinde tüm KDV iade süreçlerinizi hatasız şekilde tamamlıyoruz.",
+          "image": "/img/copyspace-business-elements.jpg"
         },
         {
           "title": "Ar-Ge ve Teknopark Danışmanlığı",
-          "desc": "Ar-Ge merkezi kurulumundan teknopark başvurusuna kadar tüm teşvik, muafiyet ve raporlama süreçlerinde yanınızdayız. Yatırımlarınız için en uygun destek mekanizmalarını belirliyoruz."
+          "desc": "Ar-Ge merkezi kurulumundan teknopark başvurusuna kadar tüm teşvik, muafiyet ve raporlama süreçlerinde yanınızdayız. Yatırımlarınız için en uygun destek mekanizmalarını belirliyoruz.",
+          "image": "/img/unwell-leader-taking-painkiller-ease-pain-due-overload-burnout.jpg"
         },
         {
           "title": "Yabancı Çalışma İzni",
-          "desc": "Yabancı personeliniz için Çalışma ve Sosyal Güvenlik Bakanlığı nezdinde tüm izin işlemlerini sizin adınıza yürütüyoruz. Başvuru dosyaları, sözleşmeler ve sistem kayıtları eksiksiz hazırlanır."
+          "desc": "Yabancı personeliniz için Çalışma ve Sosyal Güvenlik Bakanlığı nezdinde tüm izin işlemlerini sizin adınıza yürütüyoruz. Başvuru dosyaları, sözleşmeler ve sistem kayıtları eksiksiz hazırlanır.",
+          "image": "/img/young-successful-businessman-sitting-workplace-office-background.jpg"
         },
         {
           "title": "Ticaret Sicil İşlemleri",
-          "desc": "Unvan değişikliği, sermaye artırımı, adres değişikliği gibi tüm ticaret sicil tescil işlemlerini hızla tamamlıyoruz. Tüm evrak ve süreçleri sizin yerinize takip ediyoruz."
+          "desc": "Unvan değişikliği, sermaye artırımı, adres değişikliği gibi tüm ticaret sicil tescil işlemlerini hızla tamamlıyoruz. Tüm evrak ve süreçleri sizin yerinize takip ediyoruz.",
+          "image": "/img/2210.i602.018.F.m009.c7.tax people flat composition.jpg"
         },
         {
           "title": "Finansal Raporlama Hizmeti",
-          "desc": "Şirketinizin finansal performansını düzenli olarak analiz edip yönetsel raporlamalarla destek sağlıyoruz. Doğru ve zamanında finansal bilgiyle stratejik kararlarınıza yön veriyoruz."
-        }
-      ]
-    },
-    "roadmap": {
-      "title": "Nasıl çalışıyoruz?",
-      "subtitle": "İlk toplantıdan raporlama otomasyonuna kadar şeffaf, ölçülebilir bir metodoloji izliyoruz.",
-      "steps": [
-        {
-          "title": "1. Tanışma ve keşif",
-          "desc": "Şirketinizi, hedeflerinizi ve mevcut mali mimarinizi analiz ediyoruz."
+          "desc": "Şirketinizin finansal performansını düzenli olarak analiz edip yönetsel raporlamalarla destek sağlıyoruz. Doğru ve zamanında finansal bilgiyle stratejik kararlarınıza yön veriyoruz.",
+          "image": "/img/young-tired-businessman-working-his-office-businessperson-professional-environment.jpg"
         },
         {
-          "title": "2. Yol haritası",
-          "desc": "Vergi, mevzuat ve raporlama için adım adım uygulanabilir aksiyon planı çıkarıyoruz."
-        },
-        {
-          "title": "3. Sürekli optimizasyon",
-          "desc": "Gerçek zamanlı raporlarla süreci izliyor, gerektiğinde yeni düzenlemeler öneriyoruz."
+          "title": "Yabancı Sermaye Kuruluş İşlemleri Hizmetleri",
+          "desc": "Türkiye'ye yatırım yapmak isteyen yabancı yatırımcılar için yabancı sermaye mevzuatı ve Türk Ticaret Kanunu hükümlerine tam uyumlu şirket kuruluş süreçlerini yönetiyoruz. Ticaret sicili tescilinden vergi dairesi işlemlerine, gerekli izin başvurularından yasal uyum süreçlerine kadar tüm adımları profesyonelce yürütüyoruz.",
+          "image": "/img/5291220.jpg",
+          "details": {
+            "intro": "Yabancı Sermaye Kuruluş İşlemleri kapsamında müşterilerimize aşağıdaki hizmetleri sunmaktayız:",
+            "items": [
+              {
+                "title": "Şirket Kuruluş İşlemleri",
+                "desc": "Yabancı sermaye mevzuatına uygun olarak Türkiye'de yatırım yapmak isteyen yabancı yatırımcılar için TTK hükümlerine uygun olarak şirket kuruluş işlemlerinin yapılması ve gerekli diğer izin başvurularının tamamlanması."
+              },
+              {
+                "title": "İrtibat Bürosu Kuruluşu",
+                "desc": "Yabancı Sermaye mevzuatına uygun olarak Türkiye'de irtibat bürosu kurmak isteyen yabancı yatırımcılar için kuruluş işlemlerinin yapılması ve gerekli diğer izin başvurularının gerçekleştirilmesi."
+              },
+              {
+                "title": "Yasal Uyum ve Danışmanlık",
+                "desc": "Yabancı yatırımcıların Türkiye'deki faaliyetleri için gerekli yasal düzenlemelere uyum sağlanması, izin ve ruhsat süreçlerinin takibi ve yönetilmesi konularında kapsamlı danışmanlık hizmeti."
+              }
+            ]
+          }
         }
       ]
-    },
+},
     "detailCards": {
       "scopeTitle": "Bu hizmet neleri kapsar?",
       "scopeText": "Sunulan hizmet; mevzuata tam uyum, belge ve bildirim süreçleri ile düzenli raporlama adımlarını kapsayan uçtan uca bir danışmanlık yapısı sunar.",
