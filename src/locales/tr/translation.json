@@ -20,21 +20,48 @@
     "secondaryCta": "Hemen Ara",
     "secondaryNote": "7/24 stratejik danışman hattı",
     "stats": [
-      { "value": "120+", "label": "Aktif müşteri" },
-      { "value": "%98", "label": "Uzun dönem iş ortağı" },
-      { "value": "4.9/5", "label": "Memnuniyet ortalaması" }
+      {
+        "value": "120+",
+        "label": "Aktif müşteri"
+      },
+      {
+        "value": "%98",
+        "label": "Uzun dönem iş ortağı"
+      },
+      {
+        "value": "4.9/5",
+        "label": "Memnuniyet ortalaması"
+      }
     ],
     "caseStudy": {
       "title": "3 ayda nakit akışını %18 iyileştirdik",
       "metrics": [
-        { "label": "Vergi optimizasyonu", "value": "+₺4,2M" },
-        { "label": "Bütçe sapması", "value": "%-9 → %-2" },
-        { "label": "Raporlama süresi", "value": "72s → 6s" }
+        {
+          "label": "Vergi optimizasyonu",
+          "value": "+₺4,2M"
+        },
+        {
+          "label": "Bütçe sapması",
+          "value": "%-9 → %-2"
+        },
+        {
+          "label": "Raporlama süresi",
+          "value": "72s → 6s"
+        }
       ],
       "timeline": [
-        { "label": "1. Hafta", "desc": "Risk ve mevzuat uyum haritası çıkarıldı." },
-        { "label": "3. Hafta", "desc": "ERP entegrasyonu ile gerçek zamanlı raporlama açıldı." },
-        { "label": "12. Hafta", "desc": "Yatırım turu için denetim paketi hazırlandı." }
+        {
+          "label": "1. Hafta",
+          "desc": "Risk ve mevzuat uyum haritası çıkarıldı."
+        },
+        {
+          "label": "3. Hafta",
+          "desc": "ERP entegrasyonu ile gerçek zamanlı raporlama açıldı."
+        },
+        {
+          "label": "12. Hafta",
+          "desc": "Yatırım turu için denetim paketi hazırlandı."
+        }
       ]
     }
   },
@@ -53,9 +80,18 @@
       "SAP, Logo ve Netsis entegrasyon deneyimi"
     ],
     "metrics": [
-      { "value": "25", "label": "yıl tecrübe" },
-      { "value": "9", "label": "farklı sektör" },
-      { "value": "3", "label": "dilde raporlama" }
+      {
+        "value": "25",
+        "label": "yıl tecrübe"
+      },
+      {
+        "value": "9",
+        "label": "farklı sektör"
+      },
+      {
+        "value": "3",
+        "label": "dilde raporlama"
+      }
     ]
   },
   "services": {
@@ -146,7 +182,7 @@
           }
         }
       ]
-},
+    },
     "detailCards": {
       "scopeTitle": "Bu hizmet neleri kapsar?",
       "scopeText": "Sunulan hizmet; mevzuata tam uyum, belge ve bildirim süreçleri ile düzenli raporlama adımlarını kapsayan uçtan uca bir danışmanlık yapısı sunar.",

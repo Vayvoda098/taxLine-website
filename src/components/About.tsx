@@ -86,12 +86,12 @@ const About: React.FC = () => {
           <br></br>
           <br></br>
         </motion.div>
-       
+
       </div>
-    <br></br>  
-    <br></br>  
+      <br></br>
+      <br></br>
     </section>
-    
+
   );
 };
 

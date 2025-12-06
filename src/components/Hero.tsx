@@ -13,131 +13,95 @@ type Channel = {
   href?: string;
 };
 
-type CaseStudy = {
-  badge: string;
-  title: string;
-  metrics: { label: string; value: string }[];
-  timeline: { label: string; desc: string }[];
-};
-
 const Hero: React.FC = () => {
   const { t }: any = useTranslation();
   const rawStats = t('hero.stats', { returnObjects: true });
   const stats = Array.isArray(rawStats) ? (rawStats as Stat[]) : [];
   const rawChannels = t('contact.channels', { returnObjects: true });
   const channels = Array.isArray(rawChannels) ? (rawChannels as Channel[]) : [];
-  const rawCaseStudy = t('hero.caseStudy', { returnObjects: true }) as CaseStudy | string;
-  const caseStudy = typeof rawCaseStudy === 'object' && rawCaseStudy !== null ? rawCaseStudy : { badge: '', title: '', metrics: [], timeline: [] };
-  const caseStudyMetrics = Array.isArray(caseStudy.metrics) ? caseStudy.metrics : [];
-  const caseStudyTimeline = Array.isArray(caseStudy.timeline) ? caseStudy.timeline : [];
+
   const primaryPhone = channels.find((ch) => ch.href?.startsWith('tel'))?.value || '+90 532 123 45 67';
+  const bgImage = process.env.PUBLIC_URL + '/img/hero-bg.jpg';
 
   return (
-    <section
-      id="hero"
-      className="relative isolate overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-white"
-    >
-      <div
-        aria-hidden
-        className="absolute inset-0 bg-[radial-gradient(circle_at_15%_15%,rgba(14,165,233,0.3),transparent_55%)]"
-      />
-      <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 pb-16 pt-24 md:grid-cols-[1.05fr_0.95fr] lg:pb-24 lg:pt-28">
+    <section id="hero" className="relative isolate flex min-h-[90vh] flex-col justify-center overflow-hidden bg-slate-950 text-white">
+      {/* Background Image & Overlay */}
+      <div className="absolute inset-0 -z-10">
+        <img
+          src={bgImage}
+          alt="Office Background"
+          className="h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-900/60" />
+        <div className="absolute inset-0 bg-slate-950/30" />
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 mx-auto flex w-full max-w-6xl flex-col items-center px-4 pt-20 text-center sm:pt-24 lg:pt-32">
+
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="flex flex-col gap-8"
+          transition={{ duration: 0.8 }}
+          className="flex flex-col items-center gap-8 max-w-4xl"
         >
-          <div className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs uppercase tracking-[0.3em] text-sky-200">
+          {/* Tagline Badge */}
+          <div className="inline-flex items-center gap-2 rounded-full border border-sky-500/30 bg-sky-500/10 px-5 py-2 text-xs font-bold uppercase tracking-[0.25em] text-sky-300 backdrop-blur-md">
             <span>{t('hero.tagline')}</span>
           </div>
+
+          {/* Headlines */}
           <div className="space-y-6">
-            <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-7xl">
               {t('hero.title')}
             </h1>
-            <p className="max-w-2xl text-base text-slate-200 sm:text-lg">
+            <p className="mx-auto max-w-2xl text-lg text-slate-200/90 sm:text-xl leading-relaxed font-light">
               {t('hero.subtitle')}
             </p>
           </div>
-          <div className="flex flex-wrap items-center gap-4">
+
+          {/* CTA Buttons */}
+          <div className="mt-4 flex flex-col w-full sm:w-auto sm:flex-row items-center justify-center gap-4">
             <Link
               to="/iletisim"
-              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-400 to-cyan-300 px-7 py-3 text-base font-semibold text-slate-950 shadow-lg shadow-sky-500/30 transition hover:scale-[1.02]"
+              className="group relative inline-flex h-14 w-full sm:w-auto items-center justify-center overflow-hidden rounded-full bg-white px-8 font-semibold text-slate-950 shadow-2xl transition duration-300 hover:bg-sky-50 hover:text-sky-600 focus:outline-none focus:ring-2 focus:ring-sky-400 focus:ring-offset-2 focus:ring-offset-slate-900"
             >
-              {t('hero.cta')}
+              <span className="relative z-10">{t('hero.cta')}</span>
+              <div className="absolute inset-0 -z-10 bg-gradient-to-r from-sky-200 to-cyan-100 opacity-0 transition group-hover:opacity-100" />
             </Link>
+
             <a
               href={`tel:${primaryPhone.replace(/\s+/g, '')}`}
-              className="inline-flex items-center gap-3 rounded-full border border-white/20 px-6 py-3 text-sm font-semibold text-white transition hover:border-sky-300/60"
+              className="inline-flex h-14 w-full sm:w-auto items-center justify-center gap-3 rounded-full border border-white/20 bg-white/5 px-8 font-semibold text-white backdrop-blur-sm transition duration-300 hover:bg-white/10 hover:border-white/40"
             >
               <span>{t('hero.secondaryCta')}</span>
               <span className="text-sky-300">{primaryPhone}</span>
             </a>
           </div>
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-            <p className="text-xs uppercase tracking-[0.2em] text-slate-300">{t('hero.secondaryNote')}</p>
-            <div className="mt-5 grid gap-5 text-center sm:grid-cols-3">
-              {stats.map((stat, idx) => (
-                <div key={stat.label} className="space-y-2">
-                  <motion.p
-                    initial={{ opacity: 0, y: 10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.2 + idx * 0.1 }}
-                    className="text-3xl font-semibold text-sky-200"
-                  >
-                    {stat.value}
-                  </motion.p>
-                  <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-400">{stat.label}</p>
-                </div>
-              ))}
-            </div>
-          </div>
         </motion.div>
 
+        {/* Stats / Credentials Bar */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative flex flex-col gap-6"
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="relative mt-20 w-full lg:mt-32"
         >
-          <div className="absolute -left-6 -top-6 h-20 w-20 rounded-full bg-sky-400/20 blur-3xl" aria-hidden />
-          <div className="absolute -right-4 bottom-10 h-16 w-16 rounded-full bg-cyan-300/30 blur-2xl" aria-hidden />
+          {/* Decorative separator line */}
+          <div className="absolute -top-12 left-1/2 h-24 w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-sky-500/50 to-transparent opacity-50" />
 
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900/75 to-slate-800/55 p-6 shadow-2xl backdrop-blur">
-            <div className="space-y-3">
-              <h3 className="text-xl font-semibold leading-snug text-white sm:text-2xl">{caseStudy.title}</h3>
-            </div>
-            <div className="mt-6 grid gap-3 sm:grid-cols-3">
-              {caseStudyMetrics.map((metric) => (
-                <div
-                  key={metric.label}
-                  className="flex h-24 flex-col items-center justify-center rounded-2xl border border-white/10 bg-black/25 px-3 py-4 text-center text-sm text-slate-200"
-                >
-                  <p className="text-[11px] leading-tight uppercase tracking-[0.25em] text-slate-400">
-                    {metric.label}
-                  </p>
-                  <p className="mt-2 text-base font-semibold text-white sm:text-lg">{metric.value}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-            <div className="space-y-5">
-              {caseStudyTimeline.map((item, idx) => (
-                <div key={item.label} className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-sky-500/20 text-sm font-semibold text-sky-100">
-                    {idx + 1}
-                  </div>
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">{item.label}</p>
-                    <p className="text-sm text-white">{item.desc}</p>
-                  </div>
+          <div className="mx-auto max-w-5xl rounded-3xl border border-white/5 bg-white/[0.03] p-6 backdrop-blur-sm transition duration-500 hover:border-white/10 hover:bg-white/[0.06] md:p-8">
+            <div className="grid gap-8 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10">
+              {stats.map((stat, idx) => (
+                <div key={stat.label} className="flex flex-col items-center justify-center gap-1 pt-6 sm:pt-0 first:pt-0 group">
+                  <p className="text-4xl font-bold tracking-tight text-white transition group-hover:text-sky-200">{stat.value}</p>
+                  <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-slate-400 group-hover:text-sky-100/70 transition">{stat.label}</p>
                 </div>
               ))}
             </div>
           </div>
         </motion.div>
+
       </div>
     </section>
   );

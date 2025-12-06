@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { newsItems } from '../data/news';
+import SEO from '../components/SEO';
 
 // Tekil haber detay sayfası. /haberler/:slug rotası için kullanılır.
 
@@ -15,6 +16,7 @@ const NewsDetailPage: React.FC = () => {
   if (!news) {
     return (
       <main className="mx-auto max-w-4xl px-4 pt-14 pb-4 text-slate-100">
+        <SEO title="Haber Bulunamadı" description="Aradığınız haber sistemimizde bulunamadı." />
         <p className="text-sm text-slate-400">{t('news.notFound') || 'İstediğiniz haber bulunamadı.'}</p>
         <Link to="/haberler" className="mt-4 inline-flex text-sm text-sky-300 underline underline-offset-4">
           {t('news.backToList') || 'Tüm haberlere dön'}
@@ -27,6 +29,11 @@ const NewsDetailPage: React.FC = () => {
 
   return (
     <main className="relative border-t border-white/5 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-white">
+      <SEO
+        title={content.title}
+        description={content.excerpt}
+        type="article"
+      />
       <div className="mx-auto max-w-4xl px-4 pt-14 pb-4">
         <div className="mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-sky-300">
           {news.category} • {news.date}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import SEO from '../components/SEO';
 
 // Hizmet detay sayfası: URL'deki slug'a göre ilgili hizmet bilgisini çeker
 // Metinler tamamen i18n üzerinden yönetilir, sayfa tasarımı ise mevcut tema ile uyumlu tutulur.
@@ -29,6 +30,7 @@ const ServiceDetailPage: React.FC = () => {
   if (serviceIndex < 0 || serviceIndex >= detailedItems.length) {
     return (
       <section className="relative min-h-[60vh] bg-slate-950 py-16 text-white">
+        <SEO title="Hizmet Bulunamadı" description="Aradığınız hizmete ulaşılamadı. Lütfen hizmetler sayfamızı ziyaret edin." />
         <div className="mx-auto max-w-6xl px-4 text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.4em] text-sky-400">
             {t('services.title')}
@@ -63,6 +65,10 @@ const ServiceDetailPage: React.FC = () => {
 
   return (
     <section className="relative bg-slate-950 pb-20 pt-10 text-white">
+      <SEO
+        title={currentService.title}
+        description={currentService.desc}
+      />
       {/* Üst şerit ve breadcrumb alanı */}
       <div className="border-b border-sky-500/30 bg-gradient-to-r from-sky-500/40 via-sky-500/20 to-transparent py-6">
         <div className="mx-auto max-w-6xl px-4">
@@ -89,8 +95,8 @@ const ServiceDetailPage: React.FC = () => {
         {/* Hizmet görseli - her hizmete özel resim */}
         {currentService.image && (
           <div className="max-w-3xl overflow-hidden rounded-3xl border border-white/10 shadow-lg">
-            <img 
-              src={`${process.env.PUBLIC_URL}${currentService.image}`} 
+            <img
+              src={`${process.env.PUBLIC_URL}${currentService.image}`}
               alt={currentService.title}
               className={
                 serviceSlug === 'yabanci-sermaye-kurulus-islemleri'
