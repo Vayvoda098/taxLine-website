@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/taxLine-website/static/css/main.5a1532a2.css",
-    "main.js": "/taxLine-website/static/js/main.3b4bcd23.js",
-    "static/js/354.ed8b36cc.chunk.js": "/taxLine-website/static/js/354.ed8b36cc.chunk.js",
+    "main.css": "/taxLine-website/static/css/main.c5d17544.css",
+    "main.js": "/taxLine-website/static/js/main.2374f56c.js",
+    "static/js/354.31df6bf2.chunk.js": "/taxLine-website/static/js/354.31df6bf2.chunk.js",
     "static/js/416.b7e6389b.chunk.js": "/taxLine-website/static/js/416.b7e6389b.chunk.js",
     "static/js/215.1fd99760.chunk.js": "/taxLine-website/static/js/215.1fd99760.chunk.js",
-    "static/js/233.a61c9052.chunk.js": "/taxLine-website/static/js/233.a61c9052.chunk.js",
+    "static/js/233.991cd322.chunk.js": "/taxLine-website/static/js/233.991cd322.chunk.js",
     "static/js/960.16fc518e.chunk.js": "/taxLine-website/static/js/960.16fc518e.chunk.js",
     "static/js/994.3cf75752.chunk.js": "/taxLine-website/static/js/994.3cf75752.chunk.js",
     "static/js/684.c244b00e.chunk.js": "/taxLine-website/static/js/684.c244b00e.chunk.js",
     "static/js/453.7ae57ccd.chunk.js": "/taxLine-website/static/js/453.7ae57ccd.chunk.js",
     "index.html": "/taxLine-website/index.html",
-    "main.5a1532a2.css.map": "/taxLine-website/static/css/main.5a1532a2.css.map",
-    "main.3b4bcd23.js.map": "/taxLine-website/static/js/main.3b4bcd23.js.map",
-    "354.ed8b36cc.chunk.js.map": "/taxLine-website/static/js/354.ed8b36cc.chunk.js.map",
+    "main.c5d17544.css.map": "/taxLine-website/static/css/main.c5d17544.css.map",
+    "main.2374f56c.js.map": "/taxLine-website/static/js/main.2374f56c.js.map",
+    "354.31df6bf2.chunk.js.map": "/taxLine-website/static/js/354.31df6bf2.chunk.js.map",
     "416.b7e6389b.chunk.js.map": "/taxLine-website/static/js/416.b7e6389b.chunk.js.map",
     "215.1fd99760.chunk.js.map": "/taxLine-website/static/js/215.1fd99760.chunk.js.map",
-    "233.a61c9052.chunk.js.map": "/taxLine-website/static/js/233.a61c9052.chunk.js.map",
+    "233.991cd322.chunk.js.map": "/taxLine-website/static/js/233.991cd322.chunk.js.map",
     "960.16fc518e.chunk.js.map": "/taxLine-website/static/js/960.16fc518e.chunk.js.map",
     "994.3cf75752.chunk.js.map": "/taxLine-website/static/js/994.3cf75752.chunk.js.map",
     "684.c244b00e.chunk.js.map": "/taxLine-website/static/js/684.c244b00e.chunk.js.map",
     "453.7ae57ccd.chunk.js.map": "/taxLine-website/static/js/453.7ae57ccd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a1532a2.css",
-    "static/js/main.3b4bcd23.js"
+    "static/css/main.c5d17544.css",
+    "static/js/main.2374f56c.js"
   ]
 }
