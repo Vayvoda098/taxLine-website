@@ -30,14 +30,14 @@ const Navbar: React.FC = () => {
   const { t, i18n }: any = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   const LanguageSwitch = ({ isMobile = false }) => (
     <div
-      className={`flex items-center gap-1 rounded-full border p-1 text-xs font-semibold ${
-        isMobile
-          ? 'border-white/20 bg-transparent text-white'
-          : 'border-slate-200/80 bg-white/80 text-slate-600 shadow-sm'
-      }`}
+      className={`flex items-center gap-1 rounded-full border p-1 text-xs font-semibold ${isMobile
+        ? 'border-white/20 bg-transparent text-white'
+        : 'border-slate-200/80 bg-white/80 text-slate-600 shadow-sm'
+        }`}
     >
       {['tr', 'en'].map((lng) => (
         <button
@@ -46,15 +46,14 @@ const Navbar: React.FC = () => {
             i18n.changeLanguage(lng);
             setMenuOpen(false);
           }}
-          className={`w-full rounded-full px-3 py-1 transition ${
-            i18n.resolvedLanguage === lng
-              ? isMobile
-                ? 'bg-white/10'
-                : 'bg-slate-900 text-white'
-              : isMobile
+          className={`w-full rounded-full px-3 py-1 transition ${i18n.resolvedLanguage === lng
+            ? isMobile
+              ? 'bg-white/10'
+              : 'bg-slate-900 text-white'
+            : isMobile
               ? 'hover:bg-white/5'
               : 'hover:text-slate-900'
-          }`}
+            }`}
         >
           {lng.toUpperCase()}
         </button>
@@ -67,13 +66,12 @@ const Navbar: React.FC = () => {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         {/* LOGO ALANI */}
         <Link to="/" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-          <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-gradient-to-r from-sky-500 to-cyan-300 text-base font-semibold text-slate-950 shadow-lg shadow-sky-500/40">
-            T
-          </div>
-          <div className="flex flex-col leading-tight text-left">
-            <span className="text-sm font-semibold tracking-wide text-white">
-              {t('brand')}
-            </span>
+          <div className="rounded-xl bg-white/95 px-0 py-0 shadow-md">
+            <img
+              src={`${process.env.PUBLIC_URL}/img/TaxEuropeLogo.png`}
+              alt={t('brand')}
+              className="h-10 w-auto object-contain"
+            />
           </div>
         </Link>
 
@@ -107,7 +105,7 @@ const Navbar: React.FC = () => {
                       className={`h-4 w-4 transition-transform ${servicesOpen ? 'rotate-180' : ''}`}
                     />
                   </NavLink>
-                  
+
                   {/* DROPDOWN - OPAK VE NET GÖRÜNÜM */}
                   {servicesOpen && (
                     <div className="absolute left-1/2 -translate-x-1/2 top-full w-80 pt-2 animate-in fade-in slide-in-from-top-2 duration-200">
@@ -138,7 +136,7 @@ const Navbar: React.FC = () => {
                               </Link>
                             ))}
                         </div>
-                        
+
                         {/* Alt gradient efekti */}
                         <div className="absolute inset-x-0 -bottom-px h-px bg-gradient-to-r from-transparent via-sky-400/70 to-transparent" />
                       </div>
@@ -197,35 +195,36 @@ const Navbar: React.FC = () => {
                 if (link.hasDropdown) {
                   return (
                     <div key={link.to} className="space-y-1">
-                      <NavLink
-                        to={link.to}
-                        end={link.end}
-                        onClick={() => setMenuOpen(false)}
-                        className={({ isActive }) =>
-                          [
-                            'rounded-lg px-3 py-2 transition hover:bg-white/10 block w-full text-left',
-                            isActive ? 'bg-white/10 text-white' : 'text-slate-200',
-                          ].join(' ')
-                        }
+                      <button
+                        onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+                        className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-left transition hover:bg-white/10 ${mobileServicesOpen ? 'bg-white/10 text-white' : 'text-slate-200'
+                          }`}
                       >
                         <span>{t(link.labelKey)}</span>
-                      </NavLink>
-                      <div className="ml-3 flex flex-col gap-1 text-xs font-normal text-slate-100">
-                        {t('services.detailed.items', { returnObjects: true })
-                          .slice(0, 9)
-                          .map((item: any, index: number) => (
-                            <Link
-                              key={item.title}
-                              to={`/cozumler/${serviceSlugs[index]}`}
-                              onClick={() => {
-                                setMenuOpen(false);
-                              }}
-                              className="w-full rounded-lg px-3 py-1.5 text-left font-medium hover:bg-white/10"
-                            >
-                              {item.title}
-                            </Link>
-                          ))}
-                      </div>
+                        <ChevronDownIcon
+                          className={`h-4 w-4 transition-transform duration-200 ${mobileServicesOpen ? 'rotate-180' : ''
+                            }`}
+                        />
+                      </button>
+
+                      {mobileServicesOpen && (
+                        <div className="ml-4 mt-2 flex flex-col border-l border-white/10 pl-4 text-sm animate-in fade-in slide-in-from-top-1">
+                          {t('services.detailed.items', { returnObjects: true })
+                            .slice(0, 9)
+                            .map((item: any, index: number) => (
+                              <Link
+                                key={item.title}
+                                to={`/cozumler/${serviceSlugs[index]}`}
+                                onClick={() => {
+                                  setMenuOpen(false);
+                                }}
+                                className="block py-2 text-slate-400 transition-colors hover:text-white"
+                              >
+                                {item.title}
+                              </Link>
+                            ))}
+                        </div>
+                      )}
                     </div>
                   );
                 }
