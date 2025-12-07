@@ -65,8 +65,8 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 z-30 border-b border-white/10 bg-slate-950/70 text-white backdrop-blur-xl">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         {/* LOGO ALANI */}
-        <Link to="/" className="flex items-center gap-3" onClick={() => setMenuOpen(false)}>
-          <div className="rounded-xl bg-white/95 px-0 py-0 shadow-md">
+        <Link to="/" className="flex items-center gap-3 shrink-0" onClick={() => setMenuOpen(false)}>
+          <div className="rounded-xl bg-white/95 px-2 py-1 shadow-md">
             <img
               src={`${process.env.PUBLIC_URL}/img/TaxEuropeLogo.png`}
               alt={t('brand')}
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
         </Link>
 
         {/* MASAÜSTÜ MENÜ */}
-        <nav className="hidden items-center gap-7 text-[13px] font-medium text-slate-200 md:flex">
+        <nav className="hidden items-center gap-6 text-[13px] font-medium text-slate-200 lg:flex xl:gap-8">
           {links.map((link) => {
             if (link.hasDropdown) {
               return (
@@ -108,11 +108,11 @@ const Navbar: React.FC = () => {
 
                   {/* DROPDOWN - OPAK VE NET GÖRÜNÜM */}
                   {servicesOpen && (
-                    <div className="absolute left-1/2 -translate-x-1/2 top-full w-80 pt-2 animate-in fade-in slide-in-from-top-2 duration-200">
+                    <div className="absolute left-1/2 -translate-x-1/2 top-full w-[600px] pt-2 animate-in fade-in slide-in-from-top-2 duration-200">
                       {/* Opak arkaplan katmanı */}
                       <div className="rounded-2xl border-2 border-sky-500/30 bg-slate-900 p-3 shadow-2xl shadow-sky-500/20 backdrop-blur-xl">
                         {/* Menü öğeleri */}
-                        <div className="flex flex-col gap-1 ">
+                        <div className="grid grid-cols-2 gap-2">
                           {t('services.detailed.items', { returnObjects: true })
                             .slice(0, 9)
                             .map((item: any, index: number) => (
@@ -165,7 +165,7 @@ const Navbar: React.FC = () => {
         </nav>
 
         {/* SAĞ TARAF AKSİYONLAR */}
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitch />
           <Link
             to="/iletisim"
@@ -178,7 +178,7 @@ const Navbar: React.FC = () => {
 
         {/* MOBİL MENÜ BUTONU */}
         <button
-          className="inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white md:hidden"
+          className="inline-flex items-center justify-center rounded-full border border-white/20 p-2 text-white lg:hidden"
           aria-label="Toggle menu"
           onClick={() => setMenuOpen((prev) => !prev)}
         >
