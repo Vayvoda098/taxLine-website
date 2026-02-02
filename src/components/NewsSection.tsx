@@ -52,7 +52,13 @@ const NewsSection: React.FC = () => {
               <div className="relative z-10 flex h-full flex-col gap-4">
                 <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.25em] text-slate-400">
                   <span>{news.category}</span>
-                  <span className="text-slate-500">{news.date}</span>
+                  <span className="text-slate-500">
+                    {new Date(news.date).toLocaleDateString(lang, {
+                      day: 'numeric',
+                      month: 'long',
+                      year: 'numeric',
+                    })}
+                  </span>
                 </div>
                 <h3 className="text-lg font-semibold text-white sm:text-xl">{news.title}</h3>
                 <p className="text-sm leading-relaxed text-slate-200">{news.excerpt}</p>

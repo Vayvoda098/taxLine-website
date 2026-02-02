@@ -27,11 +27,14 @@ const Hero: React.FC = () => {
     <section id="hero" className="relative isolate flex min-h-screen flex-col justify-center overflow-hidden bg-slate-950 text-white">
       {/* Background Image & Overlay */}
       <div className="absolute inset-0 -z-10">
-        <img
-          src={bgImage}
-          alt="Office Background"
-          className="h-full w-full object-cover"
-        />
+        <picture>
+          <source srcSet={`${process.env.PUBLIC_URL}/img/hero-bg.webp`} type="image/webp" />
+          <img
+            src={`${process.env.PUBLIC_URL}/img/hero-bg.jpg`}
+            alt="Office Background"
+            className="h-full w-full object-cover"
+          />
+        </picture>
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/80 to-slate-900/60" />
         <div className="absolute inset-0 bg-slate-950/30" />
       </div>

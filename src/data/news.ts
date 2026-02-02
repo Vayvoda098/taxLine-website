@@ -32,6 +32,62 @@ export type NewsItem = {
 
 export const newsItems: NewsItem[] = [
   {
+    id: 'anonim-sirketler',
+    slug: 'anonim-sirketler-hakkinda-temel-bilgiler-ve-kurulus-esaslari',
+    date: '2026-01-31',
+    category: 'Şirketler Hukuku',
+    tr: {
+      title: 'Anonim Şirketler',
+      excerpt:
+        'Anonim şirket, sermayesi belirli ve paylara bölünmüş olan, borçlarından yalnızca malvarlığıyla sorumlu bulunan şirkettir. Ticaret unvanı ve kuruluş esasları hakkında detaylar...',
+      body: [
+        'Anonim şirket, sermayesi belirli ve paylara bölünmüş olan, borçlarından yalnızca malvarlığıyla sorumlu bulunan şirkettir (TTK m. 329). İşletme konusu ile şirket türünü gösteren ibareler Türkçe olmak kaydıyla ticaret unvanı serbestçe belirlenebilir (Ticaret Unvanları Hakkında Tebliğ m. 4/1). Ticaret unvanında; anonim şirket ibaresinin bulunması ve faaliyet konusunun gösterilmesi zorunludur (TTK m. 43).',
+        'Asgari sermaye tutarı 250.000 Türk Lirasıdır. Kayıtlı sermaye sistemini kabul eden halka açık olmayan anonim şirketler açısından başlangıç sermayesi ise en az 500.000 Türk Lirası olabilir (TTK m. 332). Nakdi olarak taahhüt edilen payların itibari değerlerinin en az dörtte birinin tescilden önce ödenmesi zorunludur. Geri kalan miktar şirketin tescilini izleyen 24 ay içerisinde ödenir (TTK m. 344). Ödeme takvimi şirket esas sözleşmesinde düzenlenebileceği gibi, yönetim kurulunca da belirlenebilir (TTK m. 481).',
+        'Belirli faaliyet konularını yürüten anonim şirketler ile bilanço aktif toplamı, yıllık net satış hasılatı, çalışan sayısına göre belirlenen ölçütlerin eşik değerlerini aşan anonim şirketler bağımsız denetime tabidir (TTK m. 397 vd.).',
+      ],
+    },
+    en: {
+      title: 'Joint Stock Companies (Anonim Şirketler)',
+      excerpt:
+        'A joint stock company is a company whose capital is fixed and divided into shares, and which is liable for its debts only with its assets. Details on trade name and incorporation principles...',
+      body: [
+        'Anonim şirket, sermayesi belirli ve paylara bölünmüş olan, borçlarından yalnızca malvarlığıyla sorumlu bulunan şirkettir (TTK m. 329). İşletme konusu ile şirket türünü gösteren ibareler Türkçe olmak kaydıyla ticaret unvanı serbestçe belirlenebilir (Ticaret Unvanları Hakkında Tebliğ m. 4/1). Ticaret unvanında; anonim şirket ibaresinin bulunması ve faaliyet konusunun gösterilmesi zorunludur (TTK m. 43).',
+        'Asgari sermaye tutarı 250.000 Türk Lirasıdır. Kayıtlı sermaye sistemini kabul eden halka açık olmayan anonim şirketler açısından başlangıç sermayesi ise en az 500.000 Türk Lirası olabilir (TTK m. 332). Nakdi olarak taahhüt edilen payların itibari değerlerinin en az dörtte birinin tescilden önce ödenmesi zorunludur. Geri kalan miktar şirketin tescilini izleyen 24 ay içerisinde ödenir (TTK m. 344). Ödeme takvimi şirket esas sözleşmesinde düzenlenebileceği gibi, yönetim kurulunca da belirlenebilir (TTK m. 481).',
+        'Belirli faaliyet konularını yürüten anonim şirketler ile bilanço aktif toplamı, yıllık net satış hasılatı, çalışan sayısına göre belirlenen ölçütlerin eşik değerlerini aşan anonim şirketler bağımsız denetime tabidir (TTK m. 397 vd.).',
+      ],
+    },
+  },
+  {
+    id: 'limited-sirketler',
+    slug: 'limited-sirketler-kurulus-ve-ortaklik-yapisina-dair-esaslar',
+    date: '2026-01-31',
+    category: 'Şirketler Hukuku',
+    tr: {
+      title: 'Limited Şirketler',
+      excerpt:
+        'Limited şirket, sermayesi belirli ve paylara bölünmüş olan ve borçlarından yalnızca malvarlığıyla sorumlu olan şirkettir. Ortakların sorumluluğu ve sermaye yapısı hakkında bilinmesi gerekenler...',
+      body: [
+        'Limited şirket, sermayesi belirli ve paylara bölünmüş olan ve borçlarından yalnızca malvarlığıyla sorumlu olan şirkettir (TTK m. 573/1).',
+        'Ortaklar, şirket borçlarından sorumlu olmayıp, sadece taahhüt ettikleri esas sermaye paylarını ödemekle ve şirket sözleşmesinde öngörülen ek ödeme ve yan edim yükümlülüklerini yerine getirmekle yükümlüdürler (TTK m. 573/2).',
+        'Tek ortaklı limited şirket kurulabilir. Ancak ortakların sayısı elliyi aşamaz (TTK m. 574/1). Limited şirket ortakları gerçek kişi veya tüzel kişi olabilir.',
+        'Limited şirketin esas sermayesi en az 50.000 Türk Lirası olup; esas sermaye paylarının itibarî değerleri en az yirmibeş Türk Lirası veya katları olarak belirlenebilir (TTK m. 580, 583/1). Nakdi olarak getirilen sermayenin tamamının şirketin tescilinden sonraki yirmi dört ay içinde ödenmesi mümkündür (TTK m. 585). Ödeme takvimi şirket sözleşmesinde düzenlenebileceği gibi, müdürler tarafından da belirlenebilir (TTK m. 585, 481).',
+        'İşletme konusu ile şirket türünü gösteren ibareler Türkçe olmak kaydıyla ticaret unvanı serbestçe belirlenebilir (Ticaret Unvanları Hakkında Tebliğ m. 4/1). Ticaret unvanında; limited şirket ibaresinin bulunması ve faaliyet konusunun gösterilmesi zorunludur (TTK m. 43).',
+      ],
+    },
+    en: {
+      title: 'Limited Liability Companies (Limited Şirketler)',
+      excerpt:
+        'A limited liability company is a company whose capital is fixed and divided into shares and is liable for its debts only with its assets. What you need to know about partner liability and capital structure...',
+      body: [
+        'Limited şirket, sermayesi belirli ve paylara bölünmüş olan ve borçlarından yalnızca malvarlığıyla sorumlu olan şirkettir (TTK m. 573/1).',
+        'Ortaklar, şirket borçlarından sorumlu olmayıp, sadece taahhüt ettikleri esas sermaye paylarını ödemekle ve şirket sözleşmesinde öngörülen ek ödeme ve yan edim yükümlülüklerini yerine getirmekle yükümlüdürler (TTK m. 573/2).',
+        'Tek ortaklı limited şirket kurulabilir. Ancak ortakların sayısı elliyi aşamaz (TTK m. 574/1). Limited şirket ortakları gerçek kişi veya tüzel kişi olabilir.',
+        'Limited şirketin esas sermayesi en az 50.000 Türk Lirası olup; esas sermaye paylarının itibarî değerleri en az yirmibeş Türk Lirası veya katları olarak belirlenebilir (TTK m. 580, 583/1). Nakdi olarak getirilen sermayenin tamamının şirketin tescilinden sonraki yirmi dört ay içinde ödenmesi mümkündür (TTK m. 585). Ödeme takvimi şirket sözleşmesinde düzenlenebileceği gibi, müdürler tarafından da belirlenebilir (TTK m. 585, 481).',
+        'İşletme konusu ile şirket türünü gösteren ibareler Türkçe olmak kaydıyla ticaret unvanı serbestçe belirlenebilir (Ticaret Unvanları Hakkında Tebliğ m. 4/1). Ticaret unvanında; limited şirket ibaresinin bulunması ve faaliyet konusunun gösterilmesi zorunludur (TTK m. 43).',
+      ],
+    },
+  },
+  {
     id: 'vergi-denetim-kurulu-sahte-fatura',
     slug: 'vergi-denetim-kurulundan-kritik-duzenleme-bilmeden-sahte-fatura-savunmasi-artik-gecerli-degil',
     date: '2025-09-19',

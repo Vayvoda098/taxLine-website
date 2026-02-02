@@ -35,7 +35,7 @@ const About: React.FC = () => {
             {highlights.map((item) => (
               <li
                 key={item}
-                className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/10 p-4 shadow-xl shadow-black/30 backdrop-blur"
+                className="flex items-start gap-3 rounded-2xl border border-white/5 bg-[#112240] p-4 shadow-lg transition-all duration-300 hover:border-sky-500/30 hover:shadow-sky-500/30 hover:-translate-y-1"
               >
                 <span className="mt-1 h-2 w-2 rounded-full bg-sky-400" />
                 <span>{item}</span>
@@ -65,11 +65,15 @@ const About: React.FC = () => {
           className="flex-1"
         >
           <div className="relative overflow-hidden rounded-[32px] border border-slate-100 shadow-2xl">
-            <img
-              src={`${process.env.PUBLIC_URL}/img/muhammetSoykan.jpg`}
-              alt={t('owner.fullName')}
-              className="aspect-[4/5] w-full object-cover"
-            />
+            <picture>
+              <source srcSet={`${process.env.PUBLIC_URL}/img/muhammetSoykan.webp`} type="image/webp" />
+              <img
+                src={`${process.env.PUBLIC_URL}/img/muhammetSoykan.jpg`}
+                alt={t('owner.fullName')}
+                className="aspect-[4/5] w-full object-cover"
+                loading="lazy"
+              />
+            </picture>
             <div className="absolute inset-x-6 bottom-6 rounded-2xl bg-white/90 p-5 shadow-xl backdrop-blur">
               <p className="text-sm font-semibold text-slate-900">{t('owner.fullName')}</p>
               <p className="text-xs text-slate-500">{t('owner.title')}</p>

@@ -36,7 +36,12 @@ const NewsDetailPage: React.FC = () => {
       />
       <div className="mx-auto max-w-4xl px-4 pt-14 pb-4">
         <div className="mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-sky-300">
-          {news.category} • {news.date}
+          {news.category} •{' '}
+          {new Date(news.date).toLocaleDateString(lang, {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric',
+          })}
         </div>
         <h1 className="text-3xl font-semibold sm:text-4xl">{content.title}</h1>
         <p className="mt-4 text-sm text-slate-300">{content.excerpt}</p>

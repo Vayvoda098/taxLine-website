@@ -2,7 +2,7 @@
   "name": "muhasebe-firmasi",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Vayvoda098.github.io/taxLine-website/",
+  "homepage": "/",
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",

@@ -201,7 +201,13 @@
     "hoursValue": "Hafta içi 09:00 – 19:00 • Cumartesi randevu ile",
     "channels": [
       {
-        "label": "Telefon",
+        "label": "Sabit Hat",
+        "value": "0212 292 66 95",
+        "href": "tel:02122926695",
+        "hint": "Ofis İletişim"
+      },
+      {
+        "label": "Cep Telefonu",
         "value": "+90 538 281 57 01",
         "href": "tel:+905382815701",
         "hint": "Doğrudan danışma hattı"

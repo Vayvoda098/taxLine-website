@@ -92,15 +92,19 @@ const Footer: React.FC = () => {
           <ul className="space-y-4 text-sm">
             <li className="flex items-start gap-3">
               <MapPinIcon className="h-5 w-5 shrink-0 text-sky-500" />
-              <span className="text-slate-400">Maslak Mah. Büyükdere Cad. No:123, Sarıyer/İstanbul</span>
+              <span className="text-slate-400">Terkos İş Hanı, Taksim / İstanbul</span>
             </li>
             <li className="flex items-center gap-3">
               <EnvelopeIcon className="h-5 w-5 shrink-0 text-sky-500" />
-              <a href="mailto:info@taxeurope.com" className="text-slate-400 hover:text-white">info@taxeurope.com</a>
+              <a href="mailto:info@taxeurope.com.tr" className="text-slate-400 hover:text-white">info@taxeurope.com.tr</a>
             </li>
             <li className="flex items-center gap-3">
               <PhoneIcon className="h-5 w-5 shrink-0 text-sky-500" />
-              <a href="tel:+902120000000" className="text-slate-400 hover:text-white">+90 (212) 000 00 00</a>
+              <a href="tel:02122926695" className="text-slate-400 hover:text-white">0212 292 66 95</a>
+            </li>
+            <li className="flex items-center gap-3">
+              <PhoneIcon className="h-5 w-5 shrink-0 text-sky-500" />
+              <a href="tel:+905382815701" className="text-slate-400 hover:text-white">+90 538 281 57 01</a>
             </li>
           </ul>
         </div>

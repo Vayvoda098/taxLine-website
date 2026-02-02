@@ -66,11 +66,11 @@ const Navbar: React.FC = () => {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         {/* LOGO ALANI */}
         <Link to="/" className="flex items-center gap-3 shrink-0" onClick={() => setMenuOpen(false)}>
-          <div className="rounded-xl bg-white/95 px-2 py-1 shadow-md">
+          <div className="flex h-12 w-[150px] items-center justify-center overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-sky-500/20 transition-shadow">
             <img
               src={`${process.env.PUBLIC_URL}/img/TaxEuropeLogo.png`}
               alt={t('brand')}
-              className="h-10 w-auto object-contain"
+              className="h-full w-full object-contain scale-[2.5]"
             />
           </div>
         </Link>

@@ -12,6 +12,8 @@ type Channel = {
 
 const iconMap: Record<string, React.ReactNode> = {
   Telefon: <PhoneIcon className="h-5 w-5" />,
+  'Cep Telefonu': <PhoneIcon className="h-5 w-5" />,
+  'Sabit Hat': <PhoneIcon className="h-5 w-5" />,
   Phone: <PhoneIcon className="h-5 w-5" />,
   'E-posta': <EnvelopeIcon className="h-5 w-5" />,
   'E-mail': <EnvelopeIcon className="h-5 w-5" />,
@@ -95,9 +97,8 @@ const Contact: React.FC = () => {
                       href={channel.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`rounded-2xl border p-5 shadow-sm transition-all sm:col-span-2 ${
-                        isInstagram ? 'sm:col-span-2' : ''
-                      } cursor-pointer border-white/10 bg-gradient-to-r from-slate-900 to-slate-950 text-white hover:border-sky-300/60 hover:shadow-sky-500/40 hover:shadow-lg`}
+                      className={`rounded-2xl border p-5 shadow-sm transition-all sm:col-span-2 ${isInstagram ? 'sm:col-span-2' : ''
+                        } cursor-pointer border-white/10 bg-gradient-to-r from-slate-900 to-slate-950 text-white hover:border-sky-300/60 hover:shadow-sky-500/40 hover:shadow-lg`}
                     >
                       <div className="flex items-center gap-2 text-sm font-semibold">
                         <span className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-sky-300">
@@ -115,7 +116,8 @@ const Contact: React.FC = () => {
                   <a
                     key={channel.label}
                     href={channel.href}
-                    className="rounded-2xl border border-white/10 bg-white/5 p-5 text-slate-50 shadow-sm transition hover:border-sky-300/60 hover:shadow-sky-500/30 hover:shadow-lg cursor-pointer"
+                    className={`rounded-2xl border border-white/10 bg-white/5 p-5 text-slate-50 shadow-sm transition hover:border-sky-300/60 hover:shadow-sky-500/30 hover:shadow-lg cursor-pointer ${channel.label === 'E-posta' || channel.label === 'E-mail' ? 'sm:col-span-2' : ''
+                      }`}
                   >
                     <div className="flex items-center gap-2 text-sm font-semibold">
                       <span className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-900 text-sky-300">
@@ -132,7 +134,7 @@ const Contact: React.FC = () => {
             <div className="rounded-2xl border border-white/10">
               <iframe
                 title="Ofis Konumu"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3009.7777!2d28.9728527!3d41.0310287!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDEmwqAwMSc1MS43Ik4gMjjCsDU4JzMxLjUiRQ!5e0!3m2!1str!2str!4v1700000000001!5m2!1str!2str"
+                src="https://maps.google.com/maps?q=Terkos+İş+Hanı,+Taksim&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="260"
                 style={{ border: 0 }}
